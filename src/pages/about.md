@@ -3,34 +3,74 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+このブログは管理者でもあるmatacが書き残したいと思ったことを何でも書いています。
+ジャンルは特に絞っていません。
+matacは普段、オンラインでは[Twitter](https://twitter.com/matac42)、オフラインでは南の島に生息しています。
+趣味は音楽ゲームとコンピュータネットワークです。
+ブログ以外にも、[Scrapbox](https://scrapbox.io/matac/)で細かいメモ書きを公開しています。
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
-
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
 
 <div>
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
 </div>
 
+## 音楽ゲーム
+
+主にBeatmania IIDXとプロセカをプレイしています。
+プロセカはエンジョイ勢ですが、Beatmaniaは皆伝を目指して日々精進しています(現在5段)。
+moon_child、ラストセンチュリーメランコリックといった、陶酔感を感じられる曲が好みです。
+
+### moon_child
+<iframe width="560" height="315" src="https://www.youtube.com/embed/arfiV8T7SUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### ラストセンチュリーメランコリック
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7krt2nclSWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Tech Stack
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+プログラマというよりかはインフラエンジニアという感じです。
+私としてもインフラエンジニアのお仕事ができると嬉しいです。
 
-## Features
+matacの技術スタックは以下の通りです(適当)
 
-Here are certain features of this site.
+### OS
 
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
+- Ubuntu
+- Manjaro
+- CentOS
 
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+### クラウド
+
+- AWS
+  - EC2
+  - Route53
+  - S3
+  - RDS
+  - ACM
+  - CloudFront
+  - ECS
+  - DynamoDB
+  - WorkSpaces
+
+### 使用技術
+
+- Terraform
+- RoR(Capistrano)
+- GitHub Actions
+- Ansible
+- Docker
+- Podman
+- Singularity
+- Vim
+- Golang
+
+### ネットワーク機器(趣味)
+
+- Yamaha
+  - RTX1100
+- NEC
+  - IX2207
+- Fortinet
+  - FortiGate 50E
+
+連絡は[Twitter](https://twitter.com/matac42)が一番スムーズです。
