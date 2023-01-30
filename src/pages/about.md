@@ -19,12 +19,17 @@ matacは普段、オンラインでは[Twitter](https://twitter.com/matac42)、�
 主にBeatmania IIDXとプロセカをプレイしています。
 プロセカはエンジョイ勢ですが、Beatmaniaは皆伝を目指して日々精進しています(現在5段)。
 moon_child、ラストセンチュリーメランコリックといった、陶酔感を感じられる曲が好みです。
+またONESELFのようなFuture系の曲も好きです。
 
 ### moon_child
 <iframe width="560" height="315" src="https://www.youtube.com/embed/arfiV8T7SUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### ラストセンチュリーメランコリック
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7krt2nclSWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### ONESELF
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0ahJ3_4hcL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Tech Stack
 
