@@ -7,7 +7,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://matac.info/",
+  site: "https://chill.m4t4c.link/",
   integrations: [
     tailwind({
       config: {

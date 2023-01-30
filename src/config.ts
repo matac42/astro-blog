@@ -1,13 +1,13 @@
 import type { SocialObjects } from "./types";
 
 export const SITE = {
-  website: "https://matac.info/",
+  website: "https://chill.m4t4c.link/",
   author: "matac",
   desc: "matac blog",
-  title: "ChillMatac",
+  title: "まったりするMATAYU",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
-  postPerPage: 6,
+  postPerPage: 100,
 };
 
 export const LOGO_IMAGE = {

@@ -1,0 +1,6 @@
+version: "3"
+services:
+  web:
+    image: matac/astro-blog
+    ports:
+      - "8080:80"

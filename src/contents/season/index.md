@@ -1,6 +1,7 @@
 ---
 title: "季節を感じる"
 datetime: 2022-11-08T23:55:39+09:00
+featured: true
 draft: false
 tags:
   - hoge

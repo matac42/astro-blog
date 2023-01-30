@@ -1,11 +1,13 @@
 ---
-title: "音ゲーが楽しい理由"
+title: "Why sound games are so much fun"
 datetime: 2022-11-07T21:57:05+09:00
+featured: true
 draft: false
 tags:
   - hoge
 categories: [sound_game]
 ---
+# 音楽ゲームが楽しい理由
 
 自己分析のメモ書きをしているのだが、音ゲーの部分をそのままブログにして供養する。
 
