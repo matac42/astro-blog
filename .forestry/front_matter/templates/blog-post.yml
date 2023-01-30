@@ -36,4 +36,5 @@ fields:
   config:
     required: true
 pages:
+- src/contents/blog-deployment-pipeline-configuration.md
 - src/contents/try-forestry-cms.md
