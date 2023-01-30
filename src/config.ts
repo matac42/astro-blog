@@ -4,7 +4,7 @@ export const SITE = {
   website: "https://chill.m4t4c.link/",
   author: "matac",
   desc: "matac blog",
-  title: "まったりするMATAYU",
+  title: "Mattari MATAC",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 100,
