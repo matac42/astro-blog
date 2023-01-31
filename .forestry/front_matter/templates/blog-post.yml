@@ -10,6 +10,8 @@ fields:
   name: datetime
   label: datetime
   default: now
+  config:
+    display_utc: true
 - type: text
   name: title
   label: title
