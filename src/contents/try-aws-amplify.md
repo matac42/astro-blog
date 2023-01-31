@@ -1,6 +1,6 @@
 ---
 author: matac
-datetime: 2023-01-31T22:30:16.000+00:00
+datetime: 2023-01-31T22:30:16Z
 title: Try AWS Amplify
 slug: ''
 featured: false
