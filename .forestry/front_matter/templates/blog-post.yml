@@ -40,5 +40,6 @@ fields:
 pages:
 - src/contents/blog-deployment-pipeline-configuration.md
 - src/contents/difference-between-lsm-tree-and-btree.md
+- src/contents/time-test.md
 - src/contents/try-aws-amplify.md
 - src/contents/try-forestry-cms.md
