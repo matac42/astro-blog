@@ -15,6 +15,7 @@ FORESTRY CMSにプレビュー機能があったので設定してみました�
 ## 設定
 
 * 環境はnodejsを選択する
+* RELOAD THE PREVIEW TAB WHEN THE PREVIEW BUTTON IS CLICKEDは画像ではonになっていますがoffにした方がpreviewへの反映が速いです
 * 依存パッケージをインストールするコマンド(npm install)を設定する
 * ビルドコマンド(npm run dev)を設定する
 * ビルドアウトプットのディレクトリ(dist)を設定する
@@ -22,3 +23,5 @@ FORESTRY CMSにプレビュー機能があったので設定してみました�
 ![](/img/2023-02-02-0-15-28.png)
 
 設定項目を入力したら、SAVEしてpreviewサーバーをstartします。
+
+記事をSaveするとpreviewを開くことができます。
