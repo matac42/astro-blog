@@ -11,7 +11,7 @@ fields:
   label: datetime
   default: now
   config:
-    display_utc: true
+    display_utc: false
 - type: text
   name: title
   label: title
