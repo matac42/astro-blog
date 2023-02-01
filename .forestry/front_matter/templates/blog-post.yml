@@ -41,7 +41,6 @@ pages:
 - src/contents/blog-deployment-pipeline-configuration.md
 - src/contents/difference-between-lsm-tree-and-btree.md
 - src/contents/setting-forestry-cms-preview-with-astropaper-theme.md
-- src/contents/time-test.md
 - src/contents/try-aws-amplify.md
 - src/contents/try-certificate-authentication-on-mysql-but-i-could-not-do-it.md
 - src/contents/try-forestry-cms.md
