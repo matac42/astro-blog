@@ -5,7 +5,8 @@ title: What is Double-Logging problem on RDBs with LSM-tree
 slug: ''
 featured: false
 draft: false
-tags: []
+tags:
+- paper
 ogImage: ''
 description: This is a note from my reading of the paper "Removing Double-Logging
   with Passive Data Persistence in LSM-tree based Relational Databases".
