@@ -44,5 +44,6 @@ pages:
 - src/contents/try-aws-amplify.md
 - src/contents/try-certificate-authentication-on-mysql-but-i-could-not-do-it.md
 - src/contents/try-forestry-cms.md
+- src/contents/what-is-contiguous-in-ctfs.md
 - src/contents/what-is-double-logging-problem-on-rdbs-with-lsm-tree.md
 - src/contents/what-is-nyx.md
