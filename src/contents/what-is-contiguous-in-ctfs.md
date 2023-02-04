@@ -31,3 +31,7 @@ byte-addressableとは、バイト単位でアクセスできることを指す�
 contiguous file allocationの問題点はfragmentationやファイルの移動コストがかかること。利点はオフセットの計算だけでファイルのアドレスが求まること。ctFSはbuddy memory allocationと同じような仕組みを用いてフラグメンテーションの軽減をしているらしい。
 
 今日はこのあたりで終わりにする。たまには1つの論文をもっと深く読む回があっても良いかもしれない。
+
+追記：buddy memory allocationの説明をしてる記事があった。何となくだが理解できた。
+
+* [https://codezine.jp/article/detail/9325](https://codezine.jp/article/detail/9325 "https://codezine.jp/article/detail/9325")
