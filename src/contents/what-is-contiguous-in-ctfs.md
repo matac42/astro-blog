@@ -1,7 +1,7 @@
 ---
 author: matac
 datetime: 2023-02-04T08:56:13+09:00
-title: What is contiguous in ctFS?
+title: What is contiguous in ctFS
 slug: ''
 featured: false
 draft: false
