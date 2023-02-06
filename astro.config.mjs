@@ -7,7 +7,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://chill.m4t4c.link/",
+  site: "https://main.d27qi54rrqckxi.amplifyapp.com/",
   integrations: [
     tailwind({
       config: {
