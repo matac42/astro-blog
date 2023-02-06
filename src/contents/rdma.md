@@ -1,6 +1,6 @@
 ---
 author: matac
-datetime: 2023-02-06T08:02:22+09:00
+datetime: 2023-02-06T08:02:22.000+09:00
 title: RDMAとは何か？
 slug: what-is-rdma
 featured: false
@@ -38,4 +38,4 @@ RDMAとはRemote Direct Memory Accessの略で、CPUを介さずにリモート�
 
 [https://rdma.hatenablog.com/entry/2014/04/06/161737](https://rdma.hatenablog.com/entry/2014/04/06/161737 "https://rdma.hatenablog.com/entry/2014/04/06/161737")
 
-RDMA結構楽しそうだな。InfiniBandってどこかで聞いたことあるな。RDMAで遊んでみよう。
+RDMA結構楽しそうだな。InfiniBandってどこかで聞いたことあるな。RDMAで遊んでみよう。逸般の誤家庭界隈ではすでに色々知見がありそう。
