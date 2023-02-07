@@ -7,7 +7,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://main.d27qi54rrqckxi.amplifyapp.com/",
+  site: "https://blog.matac.info/",
   integrations: [
     tailwind({
       config: {

@@ -1,7 +1,7 @@
 import type { SocialObjects } from "./types";
 
 export const SITE = {
-  website: "https://main.d27qi54rrqckxi.amplifyapp.com/",
+  website: "https://blog.matac.info/",
   author: "matac",
   desc: "matac blog",
   title: "Mattari MATAC",
