@@ -40,6 +40,7 @@ fields:
 pages:
 - src/contents/blog-deployment-pipeline-configuration.md
 - src/contents/difference-between-lsm-tree-and-btree.md
+- src/contents/qlc.md
 - src/contents/rdma.md
 - src/contents/setting-forestry-cms-preview-with-astropaper-theme.md
 - src/contents/time-series-storage.md
