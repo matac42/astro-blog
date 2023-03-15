@@ -44,6 +44,7 @@ pages:
 - src/contents/qlc.md
 - src/contents/rdma.md
 - src/contents/setting-forestry-cms-preview-with-astropaper-theme.md
+- src/contents/terraform.md
 - src/contents/time-series-storage.md
 - src/contents/try-aws-amplify.md
 - src/contents/try-certificate-authentication-on-mysql-but-i-could-not-do-it.md
