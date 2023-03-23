@@ -22,7 +22,7 @@ description: ネームサーバー周りを繰り返しapply & destroyして遊�
 
 問題が発生したのはNSレコード周りでした。NSレコードはHosted Zoneを登録するときに自動的に割り当てられます。
 NSレコードはドメインの権威を持つネームサーバーを指定しますが、NSレコード以外にも指定する場所があります。
-それはRegistered domainのName serversの設定です。NSレコードは`dig`コマンドで参照できるのに対し、
+それはRegistered domainのName serversの設定です。いわゆるwhois情報にあたります。NSレコードは`dig`コマンドで参照できるのに対し、
 Registered domainのName serversは`whois`コマンドで参照できます。
 それぞれどういうものなのかについては割愛しますが、問題はこの2つの情報がNSレコードの自動生成によりずれてしまうということです。
 
@@ -41,14 +41,14 @@ dig m4t4c.link @ns-1143.awsdns-14.org # 返ってくる
 
 一致させるには単純に考えて3つのアプローチがありますね。
 
-- Registered domainのName serversをNSレコードに合わせる
-- NSレコードをRegistered domainのName serversに合わせる
+- whois情報をNSレコードに合わせる
+- NSレコードをwhois情報に合わせる
 - 両方を固定する
 
-結論は`Registered domainのName serversをNSレコードに合わせる`です。
+結論は`whois情報をNSレコードに合わせる`です。
 他の方法は全て失敗しました。
 
-## Registered domainのName serversをNSレコードに合わせる
+## whois情報をNSレコードに合わせる
 
 以下のようなコードを書きました。(まだforの使い方がよくわかっていない人のコード)
 
@@ -77,11 +77,11 @@ resource "aws_route53domains_registered_domain" "m4t4c_link" {
 ```
 
 `aws_route53_zone`でHosted Zoneの登録を行い、`aws_route53domains_registered_domain`で
-Name serversを書き換えています。これで、NSレコードとRegistered domainのName serversは一致します。
+Name serversを書き換えています。これで、NSレコードとwhois情報は一致します。
 
 ## ダメだった方法
 
-- NSレコードをRegistered domainのName serversに合わせる
+- NSレコードをwhois情報に合わせる
 - 両方を固定する
 
 この２つは失敗しました。理由はNSレコードを書き換えたとしても、
