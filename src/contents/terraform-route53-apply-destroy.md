@@ -1,7 +1,7 @@
 ---
 author: matac
 datetime: 2023-03-23T18:10:00+09:00
-title: ドメインの移管をした
+title: Terraformでドメイン周りのapply & destroyを繰り返したときに発生した問題
 slug: terraform-route53-apply-destroy
 featured: false
 draft: false
