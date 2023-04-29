@@ -1,20 +1,21 @@
 ---
 author: matac
-datetime: 2023-03-15T20:07:42+09:00
+datetime: 2023-03-15T11:07:42.000Z
 title: Terraformでドメインと証明書取得をしたい
 slug: terraform-domain-cert
 featured: false
 draft: false
 tags:
-- tec
-- terraform
-ogImage: ''
+  - tec
+  - terraform
+ogImage: ""
 description: TerraformでAWS Route53のドメインとACM Certificateの取得をしてみました。
-
+_template: blog_post
 ---
-AWSにてドメインレコードを作成したり、そのドメインの証明書を取得したりするのはよくある作業だと思います。なのでTerraformを用いて、なるべく簡単にこの作業ができるようにしました。
 
-Terraformにはモジュール機能があります。今回はドメインレコードの作成と証明書の取得を行うモジュールを作成します。以下にモジュールのコードを載せます。
+AWS にてドメインレコードを作成したり、そのドメインの証明書を取得したりするのはよくある作業だと思います。なので Terraform を用いて、なるべく簡単にこの作業ができるようにしました。
+
+Terraform にはモジュール機能があります。今回はドメインレコードの作成と証明書の取得を行うモジュールを作成します。以下にモジュールのコードを載せます。
 
     variable "name" {
     }
@@ -24,7 +25,7 @@ Terraformにはモジュール機能があります。今回はドメインレ�
     }
     variable "zone_id" {
     }
-    
+
     # レコード作成
     resource "aws_route53_record" "m4t4c_link" {
       name    = var.name
@@ -33,13 +34,13 @@ Terraformにはモジュール機能があります。今回はドメインレ�
       type    = var.type
       zone_id = var.zone_id
     }
-    
+
     # 証明書発行
     resource "aws_acm_certificate" "m4t4c_link_cert" {
       domain_name       = var.name
       validation_method = "DNS"
     }
-    
+
     # ドメイン検証
     resource "aws_route53_record" "m4t4c_link_cert" {
       for_each = {
@@ -60,11 +61,10 @@ Terraformにはモジュール機能があります。今回はドメインレ�
       certificate_arn         = aws_acm_certificate.m4t4c_link_cert.arn
       validation_record_fqdns = [for record in aws_route53_record.m4t4c_link_cert : record.fqdn]
     }
-    
+
     output "domain_and_cert" {
       value = "Domain ${var.name} issued"
     }
-    
 
 このモジュールは以下のように使用します。
 
@@ -80,7 +80,7 @@ Terraformにはモジュール機能があります。今回はドメインレ�
         }
       }
     }
-    
+
     module "aws_record_and_cert" {
       for_each = local.domains
       source   = "./modules"
@@ -90,6 +90,5 @@ Terraformにはモジュール機能があります。今回はドメインレ�
       zone_id  = aws_route53_zone.m4t4c_link.zone_id
     }
 
-最初はモジュール化せずにforやfor_eachを使用してどうにかしようとしましたが、コードが複雑化しとてもメンテナンスできるものではありませんでした。ループで回すにしても、回す対象をモジュール化する方がコードとしては簡単になったのでそちらを採用しました。local.domainsにレコード情報を列挙し`aws_record_and_cert`
+最初はモジュール化せずに for や for_each を使用してどうにかしようとしましたが、コードが複雑化しとてもメンテナンスできるものではありませんでした。ループで回すにしても、回す対象をモジュール化する方がコードとしては簡単になったのでそちらを採用しました。local.domains にレコード情報を列挙し`aws_record_and_cert`
 に食わせています。
-

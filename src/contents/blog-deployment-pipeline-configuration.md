@@ -1,17 +1,17 @@
 ---
 author: matac
-datetime: 2023-01-30T20:09:24Z
+datetime: 2023-01-30T20:09:24.000Z
 title: Blog Deployment Pipeline Configuration
-slug: ''
+slug: ""
 featured: false
 draft: false
 tags: []
-ogImage: ''
-description: I have set it up so that I can deploy Astro static sites with GitHub
-  Actions.
-
+ogImage: ""
+description: I have set it up so that I can deploy Astro static sites with GitHub Actions.
+_template: blog_post
 ---
-# Workflowファイルの作成
+
+# Workflow ファイルの作成
 
     name: Build React on S3
     on:
@@ -24,13 +24,13 @@ description: I have set it up so that I can deploy Astro static sites with GitHu
         steps:
           - name: Checkout
             uses: actions/checkout@main
-    
+
           - name: Install Dependencies
             run: npm install
-    
+
           - name: Build
             run: npm run build
-    
+
           - name: Deploy
             env:
               AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -39,4 +39,4 @@ description: I have set it up so that I can deploy Astro static sites with GitHu
 
 [https://github.com/matac42/astro-blog/blob/main/.github/workflows/main.yml](https://github.com/matac42/astro-blog/blob/main/.github/workflows/main.yml "https://github.com/matac42/astro-blog/blob/main/.github/workflows/main.yml")
 
-やったのはこれだけです。GitHubのリポジトリシークレットにAWSのキーをセットしてあげてaws s3 cpで送ってあげます。
+やったのはこれだけです。GitHub のリポジトリシークレットに AWS のキーをセットしてあげて aws s3 cp で送ってあげます。

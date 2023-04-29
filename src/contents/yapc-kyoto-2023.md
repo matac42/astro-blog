@@ -1,19 +1,20 @@
 ---
 author: matac
-datetime: 2023-03-19T17:23:09+09:00
-title: YAPC::Kyoto 2023参加記
+datetime: 2023-03-19T08:23:09.000Z
+title: "YAPC::Kyoto 2023参加記"
 slug: yapc-kyoto-2023
 featured: false
 draft: true
 tags:
-- tec
-ogImage: ''
-description: YAPC::Kyoto 2023に参加してきました。ブログを書くまでがYAPCとのことなので感想などを書きます。
-
+  - tec
+ogImage: ""
+description: "YAPC::Kyoto 2023に参加してきました。ブログを書くまでがYAPCとのことなので感想などを書きます。"
+_template: blog_post
 ---
+
 ## Table of Contents
 
-### YAPC::Kyotoについて
+### YAPC::Kyoto について
 
 ### 面白かったセッション
 
@@ -31,7 +32,7 @@ description: YAPC::Kyoto 2023に参加してきました。ブログを書くま
 
 ### アメニティ
 
-### 2泊3日の様子
+### 2 泊 3 日の様子
 
 ### イベントに参加して得られたもの
 
