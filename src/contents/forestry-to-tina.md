@@ -25,10 +25,10 @@ Forestry CMS がいつの間にか Tina CMS に化けていたので，とりあ
 
 ###### 6
 
-- hoge
-- huga
-  - piyo
-- ozora
+* hoge
+* huga
+  * piyo
+* ozora
 
 1. Forestry
 2. Tina
@@ -42,6 +42,14 @@ identity(X) -> X.
 
 \`npx tinacms build && npm run build\`
 
-あああああ
+**あああああ**
 
-イタリック
+*イタリック*
+
+***イタリック***
+
+\~~打ち消し~~
+
+この辺りを参考にカスタマイズすると良いかもしれない
+
+* https://tina.io/docs/
