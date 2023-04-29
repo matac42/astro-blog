@@ -9,7 +9,7 @@ tags:
 description: Forestry CMSがTina CMSになっていたので使ってみた
 ---
 
-Forestry CMSがいつの間にかTina CMSに化けていたので，とりあえずTina CMSの設定をして使える状態にしました．
+Forestry CMS がいつの間にか Tina CMS に化けていたので，とりあえず Tina CMS の設定をして使える状態にしました．
 
 これは投稿テストです．
 
@@ -25,10 +25,10 @@ Forestry CMSがいつの間にかTina CMSに化けていたので，とりあえ
 
 ###### 6
 
-* hoge
-* huga
-  * piyo
-* ozora
+- hoge
+- huga
+  - piyo
+- ozora
 
 1. Forestry
 2. Tina
