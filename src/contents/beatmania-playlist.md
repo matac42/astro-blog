@@ -1,5 +1,5 @@
 ---
-author: matac@cr.ie.u-ryukyu.ac.jp
+author: matac
 datetime: 2023-05-02T15:00:00.000Z
 title: Beatmania IIDXの特に好きな楽曲
 slug: beatmania-playlist
@@ -8,7 +8,7 @@ tags:
 description: 好きな曲のリストです
 ---
 
-## moon\_child
+## moon_child
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/arfiV8T7SUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>\</iframe>
 
