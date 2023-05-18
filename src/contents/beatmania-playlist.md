@@ -6,9 +6,10 @@ slug: beatmania-playlist
 tags:
   - beatmania
 description: 好きな曲のリストです
+featured: true
 ---
 
-## moon_child
+## moon\_child
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/arfiV8T7SUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>\</iframe>
 
