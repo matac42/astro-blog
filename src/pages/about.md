@@ -5,7 +5,7 @@ title: "About"
 
 このブログは管理者でもある matac が書き残したいと思ったことを何でも書いています。
 ジャンルは特に絞っていません。
-matac は普段、オンラインでは[Twitter](https://twitter.com/matac42)、オフラインでは南の島に生息しています。
+matac は普段オンラインでは[Twitter](https://twitter.com/matac42)、オフラインでは南の島に生息しています。
 趣味は音楽ゲームとコンピュータネットワークです。
 ブログ以外にも、[Scrapbox](https://scrapbox.io/matac/)で細かいメモ書きを公開しています。また、[はてなブログ](https://mattari-matayu.hatenablog.com/)にも投稿しています。特に使い分けをしているとかはなく、気まぐれです。
 
