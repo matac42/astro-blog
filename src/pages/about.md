@@ -16,7 +16,7 @@ matac はオンラインでは[Twitter](https://twitter.com/matac42)、オフラ
 ## 音楽ゲーム
 
 主に Beatmania IIDX とプロセカをプレイしています。
-プロセカはエンジョイ勢ですが、Beatmania は皆伝を目指して日々精進しています(現在六段)。
+プロセカはエンジョイ勢ですが、Beatmania は皆伝を目指して日々精進しています(現在七段)。
 moon_child、ラストセンチュリーメランコリックといった、陶酔感を感じられる曲が好みです。
 また ONESELF のような Future 系の曲も好きです。
 
