@@ -6,7 +6,7 @@ slug: tpc-c
 tags:
   - transaction
   - tpc
-draft: true
+draft: false
 description: TPC-Cがどういうものなのか理解したい
 ---
 
@@ -44,6 +44,28 @@ logical data structures とは？
 benchmark special にならないように実装する
 
 ### Clause 1
+
+シチュエーション
+
+- 卸売業者
+- 倉庫は 10 地区をカバー
+- 各地区は 3000 人の顧客へサービス提供
+- 10 万点の商品の在庫
+- 電話注文......
+- 平均 10 個のアイテムを注文
+  - 1%はその地区の倉庫に在庫がないため他の地区から持ってくる
+
+cardinality
+
+- > リレーショナルデータベースにおいてあるテーブルの同一の列（カラム）に含まれる異なる値の数（バリエーション）のことを指すことが多い。
+  - https://e-words.jp/w/%E3%82%AB%E3%83%BC%E3%83%87%E3%82%A3%E3%83%8A%E3%83%AA%E3%83%86%E3%82%A3.html
+- `W*30k+`は倉庫の数 W \* 3 万以上の行数になるということ。
+  - `+`は「以上」というよりは「変動する」ことを表している
+
+date and time
+
+- 1st January 1900 and 31st December 2100 の日付を表す
+  - なぜ 2100 年まで......
 
 ### Clause 2
 
