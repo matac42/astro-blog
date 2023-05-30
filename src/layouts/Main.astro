@@ -27,3 +27,14 @@ const { pageTitle, pageDesc } = Astro.props;
     @apply mt-2 mb-6 italic;
   }
 </style>
+
+<style is:global>
+  .iframe-aspect {
+    aspect-ratio: 16 / 9;
+    max-width: 600px;
+  }
+  .iframe-aspect iframe {
+    width: 100%;
+    height: 100%;
+  }
+</style>

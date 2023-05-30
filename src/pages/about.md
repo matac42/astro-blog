@@ -22,15 +22,21 @@ moon_child、ラストセンチュリーメランコリックといった、陶�
 
 ### moon_child
 
+<div class="iframe-aspect">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/arfiV8T7SUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 ### ラストセンチュリーメランコリック
 
+<div class="iframe-aspect">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7krt2nclSWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 ### ONESELF
 
+<div class="iframe-aspect">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0ahJ3_4hcL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 ## Tech Stack
 
