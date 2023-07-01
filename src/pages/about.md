@@ -73,7 +73,7 @@ matac の技術スタックは以下の通りです(適当)。
 - Ansible
 - Docker
 - Podman
-- Singularity
+- Apptainer(Singularity)
 - Vim
 - Golang
 
@@ -88,6 +88,8 @@ matac の技術スタックは以下の通りです(適当)。
 
 ### 資格など
 
-- CCNA(2023/07/01 取得)
+<div style="background-color:#FBFEFB;width:150px;height:239px;padding:0px;border:0px solid #ccc;border-radius:3px">
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="9b61012b-a153-4d46-ad55-1a163ea2336a" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+</div>
 
 連絡は[Twitter](https://twitter.com/matac42)が一番スムーズです。
