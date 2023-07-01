@@ -86,4 +86,8 @@ matac の技術スタックは以下の通りです(適当)。
 - Fortinet
   - FortiGate 50E
 
+### 資格など
+
+- CCNA(2023/07/01 取得)
+
 連絡は[Twitter](https://twitter.com/matac42)が一番スムーズです。
