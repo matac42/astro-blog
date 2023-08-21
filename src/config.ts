@@ -4,7 +4,7 @@ export const SITE = {
   website: "https://blog.matac.info/",
   author: "matac",
   desc: "matac blog",
-  title: "Mattari MATAC",
+  title: "matac",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 100,

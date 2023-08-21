@@ -34,7 +34,7 @@
   }
   section,
   footer {
-    @apply max-w-3xl mx-auto px-4;
+    @apply max-w-4xl mx-auto px-4;
   }
   a {
     @apply outline-offset-1 outline-skin-fill outline-2 
@@ -49,13 +49,13 @@
     group-hover:fill-transparent;
   }
   .prose {
-    @apply prose-a:underline-offset-8 prose-ul:overflow-x-clip 
+    @apply prose-a:underline-offset-4 prose-ul:overflow-x-clip 
     prose-a:!decoration-dashed hover:prose-a:text-skin-accent 
     prose-img:mx-auto prose-img:border-2 prose-img:border-skin-line
     prose-img:!mt-2 prose-headings:!mb-3
     prose-th:border prose-th:border-skin-line
     prose-td:border prose-td:border-skin-line
-    prose-h3:italic
+    /* prose-h3:italic */
 
     
     prose-p:!text-skin-base prose-headings:!text-skin-base 
