@@ -3,7 +3,7 @@ title: "Test"
 datetime: 2022-02-27T23:31:55+09:00
 draft: false
 tags:
-  - hoge
+  - random
 ---
 
 日本語書けるかな
