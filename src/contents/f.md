@@ -16,7 +16,9 @@ _template: blog_post
 
 音ゲーの楽曲に背景があるとついついプレイしたくなるということはあると思う。最近見つけた曲だと D.J.Amuro の「F」がいいなと思った。
 
+<div class="iframe-aspect">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/noPWFI8CulY?si=Uzspmjm4ZH16yYEI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 [紹介文](https://p.eagate.573.jp/game/2dx/19/p/newsong/s_f.html)にこの曲の背景が述べられている。
 
