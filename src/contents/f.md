@@ -2,7 +2,7 @@
 author: matac
 datetime: 2023-08-31T18:51:00.000Z
 title: 背景のある音ゲーの曲
-slug: hoge-hoge
+slug: f
 featured: false
 draft: false
 tags:
