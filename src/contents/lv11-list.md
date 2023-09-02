@@ -4,7 +4,7 @@ datetime: 2023-09-02T21:10:00.000Z
 title: 弐寺 Lv11の曲リスト
 slug: lv11-list
 featured: false
-draft: true
+draft: false
 tags:
   - beatmania
   - sound_game
@@ -18,7 +18,7 @@ _template: blog_post
 
 ## 未定
 
-- [ ] Beyond Evolution(H)
+- [x] Beyond Evolution(H)
 - [ ] EXODUS SIGN
 - [ ] STRAIGHT TO THE STARS
 - [ ] THE SHINING POLARIS(kors k mix)
@@ -384,7 +384,7 @@ _template: blog_post
 - [ ] apo:llioth
 - [ ] Arabian Rave Night
 - [ ] Around the Future
-- [ ] Aurora
+- [x] Aurora
 - [ ] Be A Star
 - [ ] Be quiet
 - [ ] Beyond The Seven
@@ -402,7 +402,7 @@ _template: blog_post
 - [ ] GENOCIDE
 - [ ] Get On Your Feet
 - [ ] GIGA RAID
-- [ ] GOLD RUSH
+- [x] GOLD RUSH
 - [ ] HEISEI
 - [ ] HELL SCAPER -Last Escape Remix-
 - [ ] HYPERION
@@ -457,7 +457,7 @@ _template: blog_post
 - [ ] 405nm (Ryu☆mix)
 - [ ] バッドエンド・シンドローム
 - [ ] 爆ゼニ ☆ がってんワーカー
-- [ ] ちょえちょえまぎか
+- [x] ちょえちょえまぎか
 - [ ] 打打打打打打打打打打
 - [ ] ぐだふわエブリデー
 - [ ] 開きたまえ！Next stAge！
@@ -466,11 +466,11 @@ _template: blog_post
 - [ ] 君のハートにロックオン
 - [ ] 恋は白帯、サンシロー(L)
 - [ ] 狂水一華
-- [ ] マツケンサンバ II
+- [x] マツケンサンバ II
 - [ ] 龍王の霊廟(Mausoleum Of The Primal Dragon)
 - [ ] ミッドナイト堕天使
 - [ ] 朧(L)
-- [ ] パラドキシカル・タイムリープトライアル(Short Ver.)
+- [x] パラドキシカル・タイムリープトライアル(Short Ver.)
 - [ ] 凛として咲く花の如く(L)
 - [ ] 眠りの国のステラ
 - [ ] 合体せよ！ストロングイェーガー！！ (Ryu☆ remix)
@@ -481,13 +481,13 @@ _template: blog_post
 - [ ] FUTURE is Dead
 - [ ] Halfway of promise
 - [ ] Wonder Bullfighter
-- [ ] あるビー！ feat.ころねぽち
+- [x] あるビー！ feat.ころねぽち
 
 ## E
 
 - [ ] Blind Justice ～ Torn souls， Hurt Faiths ～
 - [ ] Breakin' Rules
-- [ ] BROKEN EDEN
+- [x] BROKEN EDEN
 - [ ] COLOSSEUM
 - [ ] Cosmic Cat
 - [ ] Daily Lunch Special
@@ -502,7 +502,7 @@ _template: blog_post
 - [ ] Hat Surprise
 - [ ] Honey Trap
 - [ ] KHAMEN BREAK
-- [ ] KING
+- [x] KING
 - [ ] Lawes's Parotia
 - [ ] LIKE A VAMPIRE
 - [ ] MA・TSU・RI
@@ -511,7 +511,7 @@ _template: blog_post
 - [ ] Night sky
 - [ ] Nothing but Theory
 - [ ] n'pa pa BBQ
-- [ ] PAPAYAPA BASS
+- [x] PAPAYAPA BASS
 - [ ] Pharaoh
 - [ ] Programmed Genom
 - [ ] QUANTUM TELEPORTATION
@@ -529,17 +529,17 @@ _template: blog_post
 - [ ] (This Is Not) The Angels
 - [ ] U.S.A.
 - [ ] Valgus
-- [ ] Ventriloquist
+- [x] Ventriloquist
 - [ ] ATHER
 - [ ] バ → ビ → ブ →Bomb!
-- [ ] ガヴリールドロップキック
+- [x] ガヴリールドロップキック
 - [ ] グッバイ宣言
 - [ ] ハードベース・フェスタ
 - [ ] ミュージック・アワー
 - [ ] IX(H)
 - [ ] おーまい！らぶりー！すうぃーてぃ！だーりん！
 - [ ] パ → ピ → プ →Yeah!
-- [ ] ぷろぐれっしぶ時空少女！うらしまたろ子ちゃん！
+- [x] ぷろぐれっしぶ時空少女！うらしまたろ子ちゃん！
 - [ ] ランカーキラーガール
 - [ ] 輪廻の鴉
 - [ ] Click Again
@@ -555,26 +555,26 @@ _template: blog_post
 - [x] Believe In Me
 - [x] CaptivAte ～浄化～
 - [ ] Change Yourself
-- [ ] crew
+- [x] crew
 - [ ] Cyber True Color
 - [x] D.C.fish
 - [ ] Destiny Sword
 - [ ] Erosion Mark
-- [ ] Harmony and Lovely
+- [x] Harmony and Lovely
 - [ ] KEY
-- [ ] Line 4 Ruin
+- [x] Line 4 Ruin
 - [ ] Linus
 - [x] Love Is Eternity
 - [x] Marie Antoinette
-- [ ] MIRACLE MEETS
-- [ ] NEW SENSATION -もう、あなたしか見えない-
+- [x] MIRACLE MEETS
+- [x] NEW SENSATION -もう、あなたしか見えない-
 - [ ] PENDUAL TALISMAN
 - [ ] Raison d'etre ～交差する宿命～
-- [ ] refractive index
-- [ ] Rock Da House
-- [ ] Shiva
+- [x] refractive index
+- [x] Rock Da House
+- [x] Shiva
 - [ ] Take It Easy
-- [ ] Tell me what you wish feat.らっぷびと
+- [x] Tell me what you wish feat.らっぷびと
 - [ ] 牧神笛吹きて
 - [x] デモーニッシュ
 - [x] いつかオトナになれるといいね。
