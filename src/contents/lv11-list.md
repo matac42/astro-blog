@@ -379,10 +379,10 @@ _template: blog_post
 ## D
 
 - [ ] Ah Hah Yeah
-- [ ] AMRITA -不滅ノ花-
+- [x] AMRITA -不滅ノ花-
 - [ ] Anisakis -somatic mutation type"Forza"-
 - [ ] apo:llioth
-- [ ] Arabian Rave Night
+- [x] Arabian Rave Night
 - [ ] Around the Future
 - [x] Aurora
 - [ ] Be A Star
@@ -459,7 +459,7 @@ _template: blog_post
 - [ ] 爆ゼニ ☆ がってんワーカー
 - [x] ちょえちょえまぎか
 - [ ] 打打打打打打打打打打
-- [ ] ぐだふわエブリデー
+- [x] ぐだふわエブリデー
 - [ ] 開きたまえ！Next stAge！
 - [ ] 華蝶風雪
 - [ ] 鴉
@@ -496,7 +496,7 @@ _template: blog_post
 - [ ] Empire State Glory
 - [ ] Engraved Mark
 - [ ] EXTREME MACH COLLIDER
-- [ ] Farewell to Marrakech
+- [x] Farewell to Marrakech
 - [ ] Fascination MAXX(H)
 - [ ] Globe Glitter
 - [ ] Hat Surprise
