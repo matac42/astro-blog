@@ -1,7 +1,7 @@
 ---
 author: matac
 datetime: 2023-09-09T21:45:00.000Z
-title: ガベージコレクションのアルゴリズムと実装」を読み終えた
+title: 「ガベージコレクションのアルゴリズムと実装」を読み終えた
 slug: gc
 featured: false
 draft: false
@@ -9,7 +9,7 @@ tags:
   - tec
 ogImage: ""
 description: >-
-  ガベージコレクションのアルゴリズムと実装」を読み終えたので感想とこれからどうするかを書く
+  「ガベージコレクションのアルゴリズムと実装」を読み終えたので感想とこれからどうするかを書く
 _template: blog_post
 ---
 
@@ -27,6 +27,7 @@ _template: blog_post
 - CopyingGCとMark & SweepGCの併用
 - forwardingのアドレスをオブジェクトに書き込んでしまう
 - アドレスをアラインメントして下位数桁をフラグとしてつかってしまう
+- スタックを積み過ぎないように探索の深さを抑える
 
 etc...
 
