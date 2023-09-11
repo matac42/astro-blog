@@ -102,6 +102,8 @@ gc処理が含まれている
 
 ポインタの型はvoidなんだな
 
+## add_heap
+
 ```
 if (gc_heaps_used >= HEAP_LIMIT) {
   fputs("OutOfMemory Error", stderr);
@@ -132,13 +134,16 @@ align_p = gc_heaps[gc_heaps_used].slot = (Header *)ALIGN((size_t)p, PTRSIZE);
 ```
 ヘッダを初期化している
 
+## grow
+
 growとは？
 - ヒープを追加して拡張している
 
 構造体のアドレス + 1をすると構造体の直後のアドレス、この場合はボディの部分が指される。
 
 
-mini_gc_malloc
+## mini_gc_malloc
+
 ```
 if ((prevp = free_list) == NULL) {
     if (!(p = add_heap(TINY_HEAP_SIZE))) {
@@ -180,3 +185,32 @@ if (p == free_list) {
 ```
 
 free_listの扱いについてはmini_gc_freeを読むと理解できるはずだ。
+
+## mini_gc_free
+
+target, hit
+- free_listに入れるデータとfree_listに入れる位置を示すhit
+
+```
+target = (Header *)ptr - 1;
+```
+*ptrはデータの先頭部分を指している
+-1することでデータのヘッダ部分を指すようにしている
+
+```
+for (hit = free_list; !(target > hit && target < hit->next_free); hit = hit->next_free)
+```
+free_listはソートされている
+のでtargeを入れる場所をfree_listから探している
+hitとhit->next_freeの間もしくは終端にtargetが入る
+
+| hit | target | hit->next_free |
+| hit | target |
+
+```
+if (hit >= hit->next_free && (target > hit || target < hit->next_free)
+```
+free_listは双方向循環リスト？
+だからこの条件でリストの終端がわかる
+
+そもそもなんでmergeしているかというとおそらくfragmentationを防ぐため。
