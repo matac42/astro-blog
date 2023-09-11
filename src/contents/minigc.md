@@ -14,6 +14,8 @@ description: >-
 _template: blog_post
 ---
 
+(追記)この記事あまりにも適当すぎるので書き直した。描き直したバージョンは[こっち](/posts/minigc1)。
+
 ソースは[これ](https://github.com/matac42/minigc)。本家からフォークした。適当に読んで予想で解釈しているので間違いだらけだと思う。
 
 ## アロケーター部分
@@ -124,6 +126,8 @@ p = malloc(req_size + PTRSIZE + HEADER_SIZE);
     return NULL;
 ```
 ボディサイズ+ポインタサイズ+ヘッダサイズをアロケートする
+PTRSIZEを足しているのはアラインメントした時に終端が溢れないようにするため。
+ヒープ領域に対してもHeaderが付与されている。
 
 ```
 align_p = gc_heaps[gc_heaps_used].slot = (Header *)ALIGN((size_t)p, PTRSIZE);
@@ -133,6 +137,11 @@ align_p = gc_heaps[gc_heaps_used].slot = (Header *)ALIGN((size_t)p, PTRSIZE);
   gc_heaps_used++;
 ```
 ヘッダを初期化している
+
+`align_p = gc_heaps[gc_heaps_used].slot = (Header *)ALIGN((size_t)p, PTRSIZE);`
+これは
+
+`align_p->next_free = align_p;`なのでヘッダーのリンクリストの終端は終端自身を指していることがわかる。
 
 ## grow
 
@@ -203,6 +212,9 @@ for (hit = free_list; !(target > hit && target < hit->next_free); hit = hit->nex
 free_listはソートされている
 のでtargeを入れる場所をfree_listから探している
 hitとhit->next_freeの間もしくは終端にtargetが入る
+
+| hit | hit->next_free |
+
 
 | hit | target | hit->next_free |
 | hit | target |
