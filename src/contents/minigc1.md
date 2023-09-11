@@ -15,7 +15,7 @@ description: >-
 _template: blog_post
 ---
 
-昨日[minigc読み](/posts/minigc)でざっくりと読んだが、ざっくりすぎた。minigcのアロケーション部分の解説をもう一度試みる。ソースは本家からフォークして[ここ](https://github.com/matac42/minigc)を遊び場としている。
+昨日[minigc読み](/posts/minigc)でアロケーション部分についてざっくりと書いたがざっくりすぎた。minigcのアロケーション部分の解説をもう一度試みる。ソースは本家からフォークして[ここ](https://github.com/matac42/minigc)を遊び場としている。
 
 
 先に全体の構造から説明しておく
@@ -23,6 +23,7 @@ _template: blog_post
 - ヒープ上にブロックがアロケートされる
 - ブロックはヘッダ部分とデータ部分を持つ
 - ヒープもヘッダを持つ
+- 空きブロックを`free_list`に保持している
   
 では、次に構造体を説明していく。
 
