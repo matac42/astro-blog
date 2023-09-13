@@ -40,7 +40,7 @@ GCアルゴリズムはmark & sweep GCだ。マークするのはルートから
 
 - レジスタ
 - スタック
-- root_ranges
+- 大域変数
 
 `garbage_collect`は以下の関数を呼び出している。
 
