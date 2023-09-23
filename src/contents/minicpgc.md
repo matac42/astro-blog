@@ -14,6 +14,10 @@ description: >-
 _template: blog_post
 ---
 
+ソースコードはここ
+
+- https://github.com/matac42/minicpgc
+
 今週初め頃にminigcを書き始めるとはいっていたものの、今日まで全く手をつけていなかった。minigcのCopying GCバージョンであるminicpgcを書いていくのだがとりあえずヒープ領域を用意するところを書いた。
 
 Copying GCはFrom領域とTo領域の2つのヒープ領域がある。ブロックをアロケートする際はFromに書き込む。GCはFrom領域からTo領域へブロックをコピーすることで行う。ルートから参照されていないブロックはコピーされないのでTo領域には参照されているブロックのみが残るという感じだ。
