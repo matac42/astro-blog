@@ -228,7 +228,7 @@ _template: blog_post
 - [ ] X-DEN(H)
 - [ ] 響花水月
 - [ ] 量子の海のリントヴルム
-- [ ] シル・ヴ・プレジデント(L)
+- [x] シル・ヴ・プレジデント(L)
 - [ ] 禍根
 - [ ] ウツシミウツシ
 - [ ] とろぴかる倶楽部
@@ -370,7 +370,7 @@ _template: blog_post
 - [ ] 超青少年ノ為ノ超多幸ナ超古典的超舞曲
 - [ ] 夕焼け ～ Fading Day ～
 - [ ] CHECKING YOU OUT
-- [ ] Rejection Girl
+- [x] Rejection Girl
 - [ ] Souhait bleu
 - [ ] With You
 - [ ] ピアノ協奏曲第１番”蠍火”(H)
@@ -398,7 +398,7 @@ _template: blog_post
 - [ ] Elektrick U-Phoria
 - [ ] Ember Lights
 - [ ] Emera
-- [ ] Exhaust Hype
+- [x] Exhaust Hype
 - [ ] GENOCIDE
 - [ ] Get On Your Feet
 - [ ] GIGA RAID
@@ -453,7 +453,7 @@ _template: blog_post
 - [ ] Wonder Girl feat. Kanae Asaba
 - [ ] Xepher
 - [ ] X-ray binary
-- [ ] ZENDEGI DANCE
+- [x] ZENDEGI DANCE
 - [ ] 405nm (Ryu☆mix)
 - [ ] バッドエンド・シンドローム
 - [ ] 爆ゼニ ☆ がってんワーカー
@@ -477,7 +477,7 @@ _template: blog_post
 - [ ] 仮想空間の旅人たち
 - [ ] #The_Relentless
 - [ ] 麗 ～うらら～
-- [ ] うさ ☆ かめ 大戦争！
+- [x] うさ ☆ かめ 大戦争！
 - [ ] FUTURE is Dead
 - [ ] Halfway of promise
 - [ ] Wonder Bullfighter
@@ -488,8 +488,8 @@ _template: blog_post
 - [ ] Blind Justice ～ Torn souls， Hurt Faiths ～
 - [ ] Breakin' Rules
 - [x] BROKEN EDEN
-- [ ] COLOSSEUM
-- [ ] Cosmic Cat
+- [x] COLOSSEUM
+- [x] Cosmic Cat
 - [ ] Daily Lunch Special
 - [ ] DAWN -THE NEXT ENDEAVOUR-
 - [ ] DEEP ROAR
@@ -500,16 +500,16 @@ _template: blog_post
 - [ ] Fascination MAXX(H)
 - [ ] Globe Glitter
 - [ ] Hat Surprise
-- [ ] Honey Trap
+- [x] Honey Trap
 - [ ] KHAMEN BREAK
 - [x] KING
-- [ ] Lawes's Parotia
+- [x] Lawes's Parotia
 - [ ] LIKE A VAMPIRE
 - [ ] MA・TSU・RI
 - [ ] MENDES(H)
 - [ ] murmur twins
 - [ ] Night sky
-- [ ] Nothing but Theory
+- [x] Nothing but Theory
 - [ ] n'pa pa BBQ
 - [x] PAPAYAPA BASS
 - [ ] Pharaoh
@@ -518,7 +518,7 @@ _template: blog_post
 - [ ] R5
 - [ ] RED ZONE
 - [ ] reunion(H)
-- [ ] Romantic が止まらない
+- [x] Romantic が止まらない
 - [ ] ROTTERDAM SHOGUN
 - [ ] Sakura Mirage
 - [ ] SHELTER OF THE MIND
@@ -526,7 +526,7 @@ _template: blog_post
 - [ ] SOUND OF GIALLARHORN
 - [ ] STOIC HYPOTHESIS
 - [ ] Synergy For Angels
-- [ ] (This Is Not) The Angels
+- [x] (This Is Not) The Angels
 - [ ] U.S.A.
 - [ ] Valgus
 - [x] Ventriloquist
@@ -534,7 +534,7 @@ _template: blog_post
 - [ ] バ → ビ → ブ →Bomb!
 - [x] ガヴリールドロップキック
 - [ ] グッバイ宣言
-- [ ] ハードベース・フェスタ
+- [x] ハードベース・フェスタ
 - [ ] ミュージック・アワー
 - [ ] IX(H)
 - [ ] おーまい！らぶりー！すうぃーてぃ！だーりん！
@@ -559,7 +559,7 @@ _template: blog_post
 - [ ] Cyber True Color
 - [x] D.C.fish
 - [ ] Destiny Sword
-- [ ] Erosion Mark
+- [x] Erosion Mark
 - [x] Harmony and Lovely
 - [ ] KEY
 - [x] Line 4 Ruin
@@ -580,4 +580,4 @@ _template: blog_post
 - [x] いつかオトナになれるといいね。
 - [x] ミッドナイト ☆WAR
 - [ ] 嘆きの樹(H)
-- [ ] Seraph
+- [x] Seraph
