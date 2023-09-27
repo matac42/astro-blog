@@ -9,7 +9,7 @@ tags:
   - random
 ogImage: ""
 description: >-
-  説明文
+  どんなデスクがいいかな
 _template: blog_post
 ---
 
