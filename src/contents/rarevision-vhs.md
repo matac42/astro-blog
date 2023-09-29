@@ -1,7 +1,7 @@
 ---
 author: matac
 datetime: 2023-09-29T23:23:00.000Z
-title: rarevisionvhsを気に入った
+title: RarevisionVHSを気に入った
 slug: rarevision-vhs
 featured: false
 draft: false
