@@ -469,7 +469,7 @@ _template: blog_post
 - [x] マツケンサンバ II
 - [ ] 龍王の霊廟(Mausoleum Of The Primal Dragon)
 - [ ] ミッドナイト堕天使
-- [ ] 朧(L)
+- [x] 朧(L)
 - [x] パラドキシカル・タイムリープトライアル(Short Ver.)
 - [ ] 凛として咲く花の如く(L)
 - [ ] 眠りの国のステラ
