@@ -556,7 +556,7 @@ _template: blog_post
 - [x] CaptivAte ～浄化～
 - [x] Change Yourself
 - [x] crew
-- [ ] Cyber True Color
+- [x] Cyber True Color
 - [x] D.C.fish
 - [x] Destiny Sword
 - [x] Erosion Mark
