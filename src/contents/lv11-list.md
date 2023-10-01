@@ -122,7 +122,7 @@ _template: blog_post
 - [ ] Advent Infamous
 - [ ] Aegis
 - [ ] Afterimage d'automne
-- [ ] AGEHA(L)
+- [x] AGEHA(L)
 - [ ] AIR RAID FROM THA UNDAGROUND
 - [ ] ANDROMEDA
 - [ ] ANTHEM LANDING
@@ -175,7 +175,7 @@ _template: blog_post
 - [ ] OTOKOZAKA
 - [ ] Outbreak
 - [ ] Overslept
-- [ ] Perfect Plan
+- [x] Perfect Plan
 - [ ] PHASE SHIFT MANEUVER
 - [ ] POLKAMAИIA
 - [ ] Programmed Sun
@@ -279,9 +279,9 @@ _template: blog_post
 - [ ] DROP
 - [ ] Egret and Willow
 - [ ] EMERALDAS(H)
-- [ ] Energy Drive
+- [x] Energy Drive
 - [ ] Fervidex
-- [ ] FINALLY BLAZE
+- [x] FINALLY BLAZE
 - [ ] GIGA THRASH
 - [ ] GIGA VIOLATE
 - [ ] GuNGNiR(H)
@@ -317,7 +317,7 @@ _template: blog_post
 - [ ] Scripted Connection⇒ H mix
 - [ ] Second Heaven
 - [ ] Secret of Love
-- [ ] Shadow World
+- [x] Shadow World
 - [ ] Snow Goose
 - [ ] Sparkle Smilin'
 - [ ] Squeeze
@@ -326,7 +326,7 @@ _template: blog_post
 - [ ] Take My Life
 - [ ] Temple of Anubis
 - [ ] THE DETONATOR
-- [ ] THE TIME MACHINE
+- [x] THE TIME MACHINE
 - [ ] Theory
 - [ ] TRANOID
 - [ ] Tropical April
@@ -349,7 +349,7 @@ _template: blog_post
 - [ ] ≡+≡
 - [ ] 50th Memorial Songs -The BEMANI History-
 - [ ] バンブーソード・ガール
-- [ ] カジノファイヤーことみちゃん
+- [x] カジノファイヤーことみちゃん
 - [ ] ドッキン ☆ サマーあばんちゅーる
 - [ ] 命の標本
 - [ ] 冬椿 ft. Kanae Asaba(L)
@@ -372,7 +372,7 @@ _template: blog_post
 - [ ] CHECKING YOU OUT
 - [x] Rejection Girl
 - [ ] Souhait bleu
-- [ ] With You
+- [x] With You
 - [ ] ピアノ協奏曲第１番”蠍火”(H)
 - [ ] 灼熱 Pt.2 Long Train Running(H)
 
@@ -430,11 +430,11 @@ _template: blog_post
 - [ ] RISING FIRE HAWK
 - [ ] Rising in the Sun(original mix)
 - [ ] Rock It
-- [ ] R∞tAge
-- [ ] Ruler or Loser
+- [x] R∞tAge
+- [x] Ruler or Loser
 - [ ] S!ck (Nhato Remix)
 - [ ] Sakura Reflection
-- [ ] satellite020712 from "CODED ARMS"
+- [x] satellite020712 from "CODED ARMS"
 - [ ] SEITEN NO TERIYAKI
 - [ ] SEQUENCE CAT
 - [ ] Sinus Iridum(H)
@@ -448,7 +448,7 @@ _template: blog_post
 - [ ] VALKYRIAS -英雄誕生-
 - [ ] VANESSA(H)
 - [ ] Victory Of Ravers
-- [ ] Volcanic Dragon
+- [x] Volcanic Dragon
 - [ ] Vulkan
 - [ ] Wonder Girl feat. Kanae Asaba
 - [ ] Xepher
@@ -458,17 +458,17 @@ _template: blog_post
 - [ ] バッドエンド・シンドローム
 - [ ] 爆ゼニ ☆ がってんワーカー
 - [x] ちょえちょえまぎか
-- [ ] 打打打打打打打打打打
+- [x] 打打打打打打打打打打
 - [x] ぐだふわエブリデー
 - [ ] 開きたまえ！Next stAge！
 - [ ] 華蝶風雪
 - [ ] 鴉
 - [ ] 君のハートにロックオン
 - [ ] 恋は白帯、サンシロー(L)
-- [ ] 狂水一華
+- [x] 狂水一華
 - [x] マツケンサンバ II
 - [ ] 龍王の霊廟(Mausoleum Of The Primal Dragon)
-- [ ] ミッドナイト堕天使
+- [x] ミッドナイト堕天使
 - [x] 朧(L)
 - [x] パラドキシカル・タイムリープトライアル(Short Ver.)
 - [ ] 凛として咲く花の如く(L)
@@ -510,18 +510,18 @@ _template: blog_post
 - [ ] murmur twins
 - [ ] Night sky
 - [x] Nothing but Theory
-- [ ] n'pa pa BBQ
+- [x] n'pa pa BBQ
 - [x] PAPAYAPA BASS
 - [ ] Pharaoh
 - [ ] Programmed Genom
 - [ ] QUANTUM TELEPORTATION
-- [ ] R5
+- [x] R5
 - [ ] RED ZONE
 - [ ] reunion(H)
 - [x] Romantic が止まらない
 - [ ] ROTTERDAM SHOGUN
 - [ ] Sakura Mirage
-- [ ] SHELTER OF THE MIND
+- [x] SHELTER OF THE MIND
 - [ ] SOLID WYVERN
 - [ ] SOUND OF GIALLARHORN
 - [ ] STOIC HYPOTHESIS
@@ -533,7 +533,7 @@ _template: blog_post
 - [ ] ATHER
 - [ ] バ → ビ → ブ →Bomb!
 - [x] ガヴリールドロップキック
-- [ ] グッバイ宣言
+- [x] グッバイ宣言
 - [x] ハードベース・フェスタ
 - [ ] ミュージック・アワー
 - [ ] IX(H)
@@ -541,7 +541,7 @@ _template: blog_post
 - [ ] パ → ピ → プ →Yeah!
 - [x] ぷろぐれっしぶ時空少女！うらしまたろ子ちゃん！
 - [ ] ランカーキラーガール
-- [ ] 輪廻の鴉
+- [x] 輪廻の鴉
 - [ ] Click Again
 - [ ] Elisha
 - [ ] RISLIM -Remix-
@@ -554,30 +554,30 @@ _template: blog_post
 - [x] Amor De Verao
 - [x] Believe In Me
 - [x] CaptivAte ～浄化～
-- [ ] Change Yourself
+- [x] Change Yourself
 - [x] crew
 - [ ] Cyber True Color
 - [x] D.C.fish
-- [ ] Destiny Sword
+- [x] Destiny Sword
 - [x] Erosion Mark
 - [x] Harmony and Lovely
-- [ ] KEY
+- [x] KEY
 - [x] Line 4 Ruin
 - [ ] Linus
 - [x] Love Is Eternity
 - [x] Marie Antoinette
 - [x] MIRACLE MEETS
 - [x] NEW SENSATION -もう、あなたしか見えない-
-- [ ] PENDUAL TALISMAN
-- [ ] Raison d'etre ～交差する宿命～
+- [x] PENDUAL TALISMAN
+- [x] Raison d'etre ～交差する宿命～
 - [x] refractive index
 - [x] Rock Da House
 - [x] Shiva
 - [ ] Take It Easy
 - [x] Tell me what you wish feat.らっぷびと
-- [ ] 牧神笛吹きて
+- [x] 牧神笛吹きて
 - [x] デモーニッシュ
 - [x] いつかオトナになれるといいね。
 - [x] ミッドナイト ☆WAR
-- [ ] 嘆きの樹(H)
+- [x] 嘆きの樹(H)
 - [x] Seraph
