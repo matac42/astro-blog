@@ -59,7 +59,7 @@ bindkey '^R' peco-history-selection
 
 ## 解決方法
 
-結構ダサい。
+ごめんなさい。Workaroundってほどのものでもない。結構ダサい。
 
 ```
 # ghq with peco (no bindkey)
