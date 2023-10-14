@@ -2,7 +2,7 @@
 author: matac
 datetime: 2023-10-14T18:13:00.000Z
 title: Yet Another Erlang Problems 22
-slug: hoge-hoge
+slug: yaep22
 featured: false
 draft: false
 tags:
