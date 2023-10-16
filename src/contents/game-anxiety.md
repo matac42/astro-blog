@@ -1,7 +1,7 @@
 ---
 author: matac
 datetime: 2023-10-16T22:53:00.000Z
-title: 
+title: 続ける選択
 slug: game-anxiety
 featured: false
 draft: false
@@ -10,7 +10,7 @@ tags:
   - random
 ogImage: ""
 description: >-
-  説明文
+  続ける選択
 _template: blog_post
 ---
 
