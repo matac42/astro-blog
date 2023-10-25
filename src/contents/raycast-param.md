@@ -88,11 +88,11 @@ code -g "$blog_repo/src/contents/$1.md:4:8" $blog_repo
 
 長く見えるが真ん中あたりはテンプレ文なので実質4行だ。
 ただ、このスクリプトを毎回ターミナルを開いて打つのは面倒だ。
-そこで出てくるのがRaycast script-commandsのArgumentsだ。
+そこで出てくるのが[Raycast script-commandsのArguments](https://github.com/raycast/script-commands/blob/master/documentation/ARGUMENTS.md
+)だ。
 
-https://github.com/raycast/script-commands/blob/master/documentation/ARGUMENTS.md
 
-詳細は上記リンクを参照して欲しい。
+詳細は公式のドキュメントを参照して欲しいが、RaycastのScript Commandに引数を渡す方法だ。
 最終的なスクリプトは以下のとおりだ。
 
 ```bash
