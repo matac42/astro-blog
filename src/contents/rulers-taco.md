@@ -1,26 +1,15 @@
 ---
 author: matac
 datetime: 2023-11-04T18:17:11.000Z
-title: 
+title: ルーラーズタコライスいった
 slug: rulers-taco
 featured: false
 draft: false
 tags:
-  - beatmania
-  - sound_game
   - random
-  - existentialism
-  - tec
-  - terraform
-  - philosophy
-  - filesystem
-  - infra
-  - paper
-  - network
-  - erlang
 ogImage: 
 description: >-
-  説明文
+  ルーラーズタコライス行った
 _template: blog_post
 ---
 
