@@ -2,13 +2,14 @@
 author: Sat Naing
 pubDatetime: 2022-09-25T15:20:35Z
 title: Customizing AstroPaper theme color schemes
-postSlug: ""
+slug: "customizing-astropaper-theme-color-schemes"
 featured: false
-draft: false
+draft: true
 tags:
   - color-schemes
   - docs
-description:
+ogImage: ""
+description: |
   How you can enable/disable light & dark mode; and customize color schemes
   of AstroPaper theme.
 ---
@@ -28,7 +29,7 @@ export const SITE = {
   author: "Sat Naing",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
   title: "AstroPaper",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "" "astropaper-og.jpg",
   lightAndDarkMode: true, // true by default
   postPerPage: 3,
 };
@@ -102,7 +103,7 @@ In AstroPaper theme, `:root` and `html[data-theme="light"]` selectors are used a
 
 Colors are declared in CSS custom property (CSS Variable) notation. Color property values are written in rgb values. (Note: instead of `rgb(40, 39, 40)`, only specify `40, 39, 40`)
 
-Here is the detail explanation of color properties.
+Here is the detail explaination of color properties.
 
 | Color Property       | Definition & Usage                                         |
 | -------------------- | ---------------------------------------------------------- |
@@ -129,5 +130,3 @@ Here is an example of changing the light color scheme.
   }
 }
 ```
-
-> Check out some [predefined color schemes](https://astro-paper.pages.dev/posts/predefined-color-schemes/) AstroPaper has already crafted for you.

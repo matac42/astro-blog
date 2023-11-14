@@ -2,12 +2,13 @@
 author: Sat Naing
 pubDatetime: 2022-09-26T12:13:24Z
 title: Predefined color schemes
-postSlug: predefined-color-schemes
+slug: predefined-color-schemes
 featured: false
-draft: false
+draft: true
 tags:
   - color-schemes
-description:
+ogImage: ""
+description: |
   Some of the well-crafted, predefined color schemes for AstroPaper blog
   theme.
 ---
@@ -74,21 +75,6 @@ html[data-theme="light"] {
 
 Light color scheme has to be defined as `html[data-theme="dark"]`.
 
-### AstroPaper 1 original Dark Theme
-
-![AstroPaper 1 default dark theme](https://user-images.githubusercontent.com/53733092/215769153-13b0ad8d-5ba2-44b1-af06-e5ae61293f62.png)
-
-```css
-html[data-theme="dark"] {
-  --color-fill: 47, 55, 65;
-  --color-text-base: 230, 230, 230;
-  --color-accent: 26, 217, 217;
-  --color-card: 63, 75, 90;
-  --color-card-muted: 89, 107, 129;
-  --color-border: 59, 70, 85;
-}
-```
-
 ### Deep Oyster
 
 ![deep-oyster-color-scheme](https://user-images.githubusercontent.com/53733092/192314524-45ec5904-3d8f-450a-9edf-1e32c5e11d6c.png)
@@ -116,51 +102,5 @@ html[data-theme="dark"] {
   --color-card: 75, 76, 89;
   --color-card-muted: 113, 85, 102;
   --color-border: 134, 67, 107;
-}
-```
-
-### Astro dark (High Contrast)
-
-![astro-dark-color-scheme](https://user-images.githubusercontent.com/53733092/215680520-59427bb0-f4cb-48c0-bccc-f182a428d72d.svg)
-
-```css
-html[data-theme="dark"] {
-  --color-fill: 16, 23, 42; /* higher contrast bgColor */
-  --color-fill: 33, 39, 55;
-  --color-text-base: 234, 237, 243;
-  --color-accent: 255, 107, 1;
-  --color-card: 27, 39, 70;
-  --color-card-muted: 138, 51, 2;
-  --color-border: 171, 75, 8;
-}
-```
-
-### Astro dark (New default dark theme in AstroPaper 2)
-
-![new dark color scheme - low contrast](https://user-images.githubusercontent.com/53733092/215772856-d5b7ae35-ddaa-4ed6-b0bf-3fa5dbcf834c.png)
-
-```css
-html[data-theme="dark"] {
-  --color-fill: 33, 39, 55; /* lower contrast bgColor */
-  --color-text-base: 234, 237, 243;
-  --color-accent: 255, 107, 1;
-  --color-card: 52, 63, 96;
-  --color-card-muted: 138, 51, 2;
-  --color-border: 171, 75, 8;
-}
-```
-
-### Astro Deep Purple (New dark theme in AstroPaper 3)
-
-![AstroPaper v3 new theme](https://github.com/satnaing/astro-paper/assets/53733092/c8b5d7e1-a3bc-4852-a5ad-4abf7b3cec79)
-
-```css
-html[data-theme="dark"] {
-  --color-fill: 33, 39, 55;
-  --color-text-base: 234, 237, 243;
-  --color-accent: 235, 63, 211;
-  --color-card: 52, 63, 96;
-  --color-card-muted: 125, 79, 124;
-  --color-border: 100, 36, 81;
 }
 ```
