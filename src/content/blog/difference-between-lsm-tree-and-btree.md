@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-02-01T00:45:38.000Z
 title: Difference between LSM-Tree and BTree
-slug: "difference-between-lsm-tree-and-btree"
+postSlug: "difference-between-lsm-tree-and-btree"
 featured: false
 draft: false
 tags: []

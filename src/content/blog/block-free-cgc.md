@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-08-31T22:23:00.000Z
 title: Block-free concurrent GCとは何か
-slug: block-free-cgc
+postSlug: block-free-cgc
 featured: false
 draft: false
 tags:

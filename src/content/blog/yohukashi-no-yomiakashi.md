@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-11-13T22:47:40.000Z
 title: 「夜更かしの読み明かし」を聴いている
-slug: yohukashi-no-yomiakashi
+postSlug: yohukashi-no-yomiakashi
 featured: false
 draft: false
 tags:

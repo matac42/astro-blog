@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-12T18:37:00.000Z
 title: 「珈琲倶楽部ダンケ」に行った
-slug: danke
+postSlug: danke
 featured: false
 draft: false
 tags:

@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-02-05T23:02:22.000Z
 title: RDMAとは何か？
-slug: what-is-rdma
+postSlug: what-is-rdma
 featured: false
 draft: false
 tags:

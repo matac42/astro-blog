@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-02-01T14:25:06.000Z
 title: Try Certificate Authentication on MySQL(But I could not do it)
-slug: "try-certificate-authentication-on-mysql-but-i-could-not-do-it"
+postSlug: "try-certificate-authentication-on-mysql-but-i-could-not-do-it"
 featured: false
 draft: false
 tags: []

@@ -2,7 +2,7 @@
 author: matac@cr.ie.u-ryukyu.ac.jp
 pubDatetime: 2023-04-29T15:00:00.000Z
 title: Tina CMS
-slug: forestry-to-tina
+postSlug: forestry-to-tina
 tags:
   - tec
   - tina

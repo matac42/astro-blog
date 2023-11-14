@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-15T15:12:00.000Z
 title: 最近内向的すぎる問題
-slug: introversive
+postSlug: introversive
 featured: false
 draft: false
 tags:

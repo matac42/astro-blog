@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-02-02T23:34:43.000Z
 title: What is Nyx
-slug: "what-is-nyx"
+postSlug: "what-is-nyx"
 featured: false
 draft: false
 tags:

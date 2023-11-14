@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-31T17:16:45.000Z
 title: エリーカリーにいった
-slug: eree-curry
+postSlug: eree-curry
 featured: false
 draft: false
 tags:

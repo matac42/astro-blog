@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-08-29T22:56:00.000Z
 title: お盆の親戚回りをした
-slug: obon
+postSlug: obon
 featured: false
 draft: false
 tags:

@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-07T8:37:00.000Z
 title: ハッカーズチャンプルー2023に参加してきた
-slug: hackers-champloo
+postSlug: hackers-champloo
 featured: false
 draft: false
 tags:

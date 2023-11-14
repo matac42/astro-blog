@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-08-26T17:00:00.000Z
 title: 就活完了した
-slug: job-hunting
+postSlug: job-hunting
 featured: false
 draft: false
 tags:

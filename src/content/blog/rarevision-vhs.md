@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-29T23:23:00.000Z
 title: RarevisionVHSを気に入った
-slug: rarevision-vhs
+postSlug: rarevision-vhs
 featured: false
 draft: false
 tags:

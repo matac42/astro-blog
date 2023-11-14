@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-18T20:33:00.000Z
 title: 久しぶりにオフラインのゼミをした
-slug: semi
+postSlug: semi
 featured: false
 draft: false
 tags:

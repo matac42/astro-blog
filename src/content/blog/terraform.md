@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-03-15T11:07:42.000Z
 title: Terraformでドメインと証明書取得をしたい
-slug: terraform-domain-cert
+postSlug: terraform-domain-cert
 featured: false
 draft: false
 tags:

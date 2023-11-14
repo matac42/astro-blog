@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-29T18:16:59.000Z
 title: モンハンNowをやってみている
-slug: mh-now
+postSlug: mh-now
 featured: false
 draft: false
 tags:

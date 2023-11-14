@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-12T22:29:00.000Z
 title: 久しぶりのErlangでハノイの塔
-slug: hanoi
+postSlug: hanoi
 featured: false
 draft: false
 tags:

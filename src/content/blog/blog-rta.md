@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-24T23:17:00.000Z
 title: ブログを書くのに時間を掛けない
-slug: blog-rta
+postSlug: blog-rta
 featured: false
 draft: false
 tags:

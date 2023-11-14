@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-26T22:58:00.000Z
 title: 音ゲーとお金
-slug: sg-money
+postSlug: sg-money
 featured: false
 draft: false
 tags:

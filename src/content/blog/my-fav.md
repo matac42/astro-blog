@@ -2,8 +2,8 @@
 author: matac
 pubDatetime: 2023-08-28T23:07:00.000Z
 title: 私の好きなこと
-slug: my-fav
-featured: false
+postSlug: my-fav
+featured: true
 draft: false
 tags:
   - random

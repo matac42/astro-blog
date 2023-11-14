@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-09T21:45:00.000Z
 title: 「ガベージコレクションのアルゴリズムと実装」を読み終えた
-slug: gc
+postSlug: gc
 featured: false
 draft: false
 tags:

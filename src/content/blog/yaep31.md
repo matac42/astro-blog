@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-05-17T15:00:00.000Z
 title: Yet Another Erlang Problems 31
-slug: yaep31
+postSlug: yaep31
 tags:
   - erlang
 description: Yet Another Erlang Problems 問題31 順列の問題を解いた

@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-17T22:56:00.000Z
 title: GCのコーディングを始めた
-slug: gc-coding-start
+postSlug: gc-coding-start
 featured: false
 draft: false
 tags:

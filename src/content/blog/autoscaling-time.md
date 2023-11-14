@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-20T20:31:00.000Z
 title: EC2 Auto Scalingの待ち時間の設定
-slug: autoscaling-time
+postSlug: autoscaling-time
 featured: false
 draft: false
 tags:

@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-11-07T00:45:54.000Z
 title: 夜パフェ食べた
-slug: yoru-parfait
+postSlug: yoru-parfait
 featured: false
 draft: false
 tags:

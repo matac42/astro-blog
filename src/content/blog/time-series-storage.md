@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-02-07T21:31:59.000Z
 title: Time Series Storageとは
-slug: what-is-time-series-storage
+postSlug: what-is-time-series-storage
 featured: false
 draft: false
 tags:

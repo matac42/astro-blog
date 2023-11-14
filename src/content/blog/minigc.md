@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-10T18:18:00.000Z
 title: minigc読み
-slug: minigc
+postSlug: minigc
 featured: false
 draft: false
 tags:

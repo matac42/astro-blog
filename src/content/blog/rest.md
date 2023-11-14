@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-11-05T16:58:00.000Z
 title: 今日はおやすみ
-slug: rest
+postSlug: rest
 featured: false
 draft: false
 tags:

@@ -2,8 +2,8 @@
 author: matac
 pubDatetime: 2023-09-02T21:10:00.000Z
 title: 弐寺 Lv11の曲リスト
-slug: lv11-list
-featured: true
+postSlug: lv11-list
+featured: false
 draft: false
 tags:
   - beatmania

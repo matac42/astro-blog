@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-20T18:04:00.000Z
 title: 「21世紀の道徳」を少しずつ読んでいる
-slug: 21-moral
+postSlug: 21-moral
 featured: false
 draft: false
 tags:

@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-01-31T22:30:16.000Z
 title: Try AWS Amplify
-slug: "try-aws-amplify"
+postSlug: "try-aws-amplify"
 featured: false
 draft: false
 tags: []

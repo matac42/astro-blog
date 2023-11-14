@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-30T19:44:00.000Z
 title: 人間Cコンパイラコンテストにでた
-slug: hccc
+postSlug: hccc
 featured: false
 draft: false
 tags:

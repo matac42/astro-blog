@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-05-02T15:00:00.000Z
 title: Beatmania IIDXの特に好きな楽曲
-slug: beatmania-playlist
+postSlug: beatmania-playlist
 tags:
   - beatmania
 description: 好きな曲のリストです

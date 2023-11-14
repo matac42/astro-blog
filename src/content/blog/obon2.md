@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-08-30T20:13:00.000Z
 title: お盆3日目
-slug: obon2
+postSlug: obon2
 featured: false
 draft: false
 tags:

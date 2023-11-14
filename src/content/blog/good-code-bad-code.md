@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-18T21:42:00.000Z
 title: Good Code, Bad Codeを読んでいる
-slug: good-code-bad-code
+postSlug: good-code-bad-code
 featured: false
 draft: false
 tags:

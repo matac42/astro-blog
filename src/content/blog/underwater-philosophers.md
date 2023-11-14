@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-11-10T23:42:27.000Z
 title: 「水中の哲学者たち」を読んだ
-slug: underwater-philosophers
+postSlug: underwater-philosophers
 featured: false
 draft: false
 tags:

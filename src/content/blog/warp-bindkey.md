@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-09T11:30:00.000Z
 title: Warpでbindkeyが使えない問題のWorkaround
-slug: warp-bindkey
+postSlug: warp-bindkey
 featured: false
 draft: false
 tags:

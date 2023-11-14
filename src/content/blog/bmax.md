@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-06T22:27:00.000Z
 title: BMAX(MiniPC)を何かしらに使いたい
-slug: bmax
+postSlug: bmax
 featured: false
 draft: false
 tags:

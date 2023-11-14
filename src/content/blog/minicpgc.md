@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-23T18:58:00.000Z
 title: minicpgc ヒープ領域の確保
-slug: minicpgc
+postSlug: minicpgc
 featured: false
 draft: false
 tags:

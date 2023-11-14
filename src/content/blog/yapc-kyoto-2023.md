@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-03-19T08:23:09.000Z
 title: "YAPC::Kyoto 2023参加記"
-slug: yapc-kyoto-2023
+postSlug: yapc-kyoto-2023
 featured: false
 draft: true
 tags:

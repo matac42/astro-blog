@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-05T23:18:00.000Z
 title: AWS Lambdaの良いところ
-slug: aws-lambda
+postSlug: aws-lambda
 featured: false
 draft: false
 tags:

@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-25T23:20:00.000Z
 title: minicpgc copying
-slug: minicpgc3
+postSlug: minicpgc3
 featured: false
 draft: false
 tags:

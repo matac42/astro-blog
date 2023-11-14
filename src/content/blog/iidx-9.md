@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-13T23:39:00.000Z
 title: RESIDENT中に9段合格できるか
-slug: iidx-9
+postSlug: iidx-9
 featured: false
 draft: false
 tags:

@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-16T22:53:00.000Z
 title: 続ける選択
-slug: game-anxiety
+postSlug: game-anxiety
 featured: false
 draft: false
 tags:

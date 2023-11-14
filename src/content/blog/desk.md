@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-27T23:05:00.000Z
 title: どんなデスクがいいかな
-slug: desk
+postSlug: desk
 featured: false
 draft: false
 tags:

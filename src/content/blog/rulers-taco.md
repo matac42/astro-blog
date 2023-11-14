@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-11-04T18:17:11.000Z
 title: ルーラーズタコライスいった
-slug: rulers-taco
+postSlug: rulers-taco
 featured: false
 draft: false
 tags:

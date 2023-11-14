@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-28T22:58:00.000Z
 title: 「態度」は難しい
-slug: attitude
+postSlug: attitude
 featured: false
 draft: false
 tags:

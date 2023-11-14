@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-01-30T20:09:24.000Z
 title: Blog Deployment Pipeline Configuration
-slug: ""
+postSlug: ""
 featured: false
 draft: false
 tags: []

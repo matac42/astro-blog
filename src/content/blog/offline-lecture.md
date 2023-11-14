@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-04T23:25:00.000Z
 title: 久しぶりに対面講義に出席した
-slug: offline-lecture
+postSlug: offline-lecture
 featured: false
 draft: false
 tags:

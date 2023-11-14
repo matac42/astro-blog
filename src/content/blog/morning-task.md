@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-22T10:13:00.000Z
 title: 朝にやることがわからなくなった
-slug: morning-task
+postSlug: morning-task
 featured: false
 draft: false
 tags:

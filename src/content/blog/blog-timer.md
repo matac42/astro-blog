@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-30T22:02:25.000Z
 title: ブログの執筆をより快適にしたい
-slug: blog-timer
+postSlug: blog-timer
 featured: false
 draft: false
 tags:

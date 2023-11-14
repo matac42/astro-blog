@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-11-02T23:23:03.000Z
 title: タリーズのミルクレープリモーネ
-slug: mille-crepe-limone
+postSlug: mille-crepe-limone
 featured: false
 draft: false
 tags:

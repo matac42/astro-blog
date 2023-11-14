@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-25T20:51:19.000Z
 title: Raycastで引数付きのスクリプトを実行する
-slug: raycast-param
+postSlug: raycast-param
 featured: false
 draft: false
 tags:
@@ -27,7 +27,7 @@ AstroではMarkdownファイルの先頭にフロントマターというメタ�
 author: matac
 pubDatetime: 2023-10-25T20:51:19.000Z
 title: Raycastで引数付きのスクリプトを実行する
-slug: raycast-param
+postSlug: raycast-param
 featured: false
 draft: false
 tags:
@@ -60,7 +60,7 @@ echo -e "---
 author: matac
 pubDatetime: $dt
 title:
-slug: $1
+postSlug: $1
 featured: false
 draft: false
 tags:
@@ -112,7 +112,7 @@ echo -e "---
 author: matac
 pubDatetime: $dt
 title:
-slug: $1
+postSlug: $1
 featured: false
 draft: false
 tags:

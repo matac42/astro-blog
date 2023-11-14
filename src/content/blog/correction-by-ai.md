@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-08T20:28:00.000Z
 title: ブログをChatGPTに書き直してもらった
-slug: correction-by-ai
+postSlug: correction-by-ai
 featured: false
 draft: false
 tags:

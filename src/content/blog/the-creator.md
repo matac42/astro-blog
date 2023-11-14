@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-28T16:41:37.000Z
 title: ザ・クリエーターを観てきた
-slug: the-creator
+postSlug: the-creator
 featured: false
 draft: false
 tags:

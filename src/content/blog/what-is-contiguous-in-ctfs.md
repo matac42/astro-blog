@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-02-03T23:56:13.000Z
 title: What is contiguous in ctFS
-slug: "what-is-contiguous-in-ctfs"
+postSlug: "what-is-contiguous-in-ctfs"
 featured: false
 draft: false
 tags:

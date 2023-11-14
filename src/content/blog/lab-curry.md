@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-11-12T23:18:36.000Z
 title: 今日は研究室のカレーパーティーだった
-slug: lab-curry
+postSlug: lab-curry
 featured: false
 draft: false
 tags:

@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-06T23:21:00.000Z
 title: Lv12に手が届いた！
-slug: lv12-a-clear
+postSlug: lv12-a-clear
 featured: false
 draft: false
 tags:

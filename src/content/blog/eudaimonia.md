@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-11-08T21:28:03.000Z
 title: ユーダイモニアとはなにか
-slug: eudaimonia
+postSlug: eudaimonia
 featured: false
 draft: false
 tags:

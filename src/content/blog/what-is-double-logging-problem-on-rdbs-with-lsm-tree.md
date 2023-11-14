@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-02-01T22:45:31.000Z
 title: What is Double-Logging problem on RDBs with LSM-tree
-slug: "what-is-double-logging-problem-on-rdbs-with-lsm-tree"
+postSlug: "what-is-double-logging-problem-on-rdbs-with-lsm-tree"
 featured: false
 draft: false
 tags:

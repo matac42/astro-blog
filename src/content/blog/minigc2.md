@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-13T14:24:00.000Z
 title: minigc読み(GCまとめ)
-slug: minigc2
+postSlug: minigc2
 featured: false
 draft: false
 tags:

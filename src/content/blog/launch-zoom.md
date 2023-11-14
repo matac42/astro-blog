@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-11-07T21:12:06.000Z
 title: ZoomのミーティングをRaycastで起動する
-slug: launch-zoom
+postSlug: launch-zoom
 featured: false
 draft: false
 tags:

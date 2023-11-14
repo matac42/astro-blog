@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-17T23:02:00.000Z
 title: 同僚と初顔合わせした
-slug: colleague
+postSlug: colleague
 featured: false
 draft: false
 tags:

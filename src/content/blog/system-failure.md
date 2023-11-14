@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-26T21:10:50.000Z
 title: 久しぶりにシステム障害対応した
-slug: system-failure
+postSlug: system-failure
 featured: false
 draft: false
 tags:

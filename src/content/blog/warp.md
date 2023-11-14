@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-08T20:44:00.000Z
 title: Warpを試してみている
-slug: warp
+postSlug: warp
 featured: false
 draft: false
 tags:

@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-19T14:09:00.000Z
 title: アーケードの音楽ゲームを初心者の友人に勧めるコツ
-slug: invitation-to-sound-games
+postSlug: invitation-to-sound-games
 featured: false
 draft: false
 tags:

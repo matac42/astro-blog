@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-27T23:13:24.000Z
 title: Cursor Code Editorを使ってみている
-slug: cursor-editor
+postSlug: cursor-editor
 featured: false
 draft: false
 tags:

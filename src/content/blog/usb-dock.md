@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-05T17:54:00.000Z
 title: USB Dockを買ってみた
-slug: usb-dock
+postSlug: usb-dock
 featured: false
 draft: false
 tags:

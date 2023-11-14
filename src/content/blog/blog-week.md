@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-04T21:26:00.000Z
 title: 一週間ブログを続けるのをやってみた
-slug: blog-week
+postSlug: blog-week
 featured: false
 draft: false
 tags:

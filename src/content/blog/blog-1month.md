@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-03T23:35:00.000Z
 title: 毎日ブログを書き始めて1ヶ月が経った
-slug: blog-1month
+postSlug: blog-1month
 featured: false
 draft: false
 tags:

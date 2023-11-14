@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-02T23:13:00.000Z
 title: 弐寺で手元動画を撮ってみた
-slug: ngeki-at-hand
+postSlug: ngeki-at-hand
 featured: false
 draft: false
 tags:

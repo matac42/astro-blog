@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-21T23:13:00.000Z
 title: ブログを書くことに感じているメリット
-slug: blog-merit
+postSlug: blog-merit
 featured: false
 draft: false
 tags:

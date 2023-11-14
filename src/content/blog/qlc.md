@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-02-13T02:19:47.000Z
 title: QLCドライブの寿命に関わってくるものはなにか
-slug: life-of-a-qlc-drive
+postSlug: life-of-a-qlc-drive
 featured: false
 draft: false
 tags:

@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-14T22:26:00.000Z
 title: CALDERAをプレイしたい
-slug: caldera
+postSlug: caldera
 featured: false
 draft: false
 tags:

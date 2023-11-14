@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-03-03T14:37:32.000Z
 title: EC2インスタンスを増やしたり減らしたりしたい
-slug: apply-ec2-instance-with-tf-up-down
+postSlug: apply-ec2-instance-with-tf-up-down
 featured: false
 draft: false
 tags:

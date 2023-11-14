@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-16T18:00:00.000Z
 title: 5鍵のBeatmaniaをプレイした
-slug: beatmania-5
+postSlug: beatmania-5
 featured: false
 draft: false
 tags:

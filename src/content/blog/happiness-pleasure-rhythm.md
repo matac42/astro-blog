@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-11T21:25:00.000Z
 title: 幸福と快楽と音楽ゲーム
-slug: happiness-pleasure-rhythm
+postSlug: happiness-pleasure-rhythm
 featured: false
 draft: false
 tags:

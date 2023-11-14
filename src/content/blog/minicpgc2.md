@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-24T14:57:00.000Z
 title: minicpgc mallocとfree
-slug: minicpgc2
+postSlug: minicpgc2
 featured: false
 draft: false
 tags:

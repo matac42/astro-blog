@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-23T23:18:00.000Z
 title: 久しぶりにカレーを食べた
-slug: curry
+postSlug: curry
 featured: false
 draft: false
 tags:

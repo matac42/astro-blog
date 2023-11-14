@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-21T23:42:00.000Z
 title: Beatmania IIDX EPOLIS初プレイしてきた
-slug: epolis
+postSlug: epolis
 featured: false
 draft: false
 tags:

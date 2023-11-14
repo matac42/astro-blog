@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-11-09T23:31:59.000Z
 title: 効率化を拒む自分
-slug: inefficiency
+postSlug: inefficiency
 featured: false
 draft: false
 tags:

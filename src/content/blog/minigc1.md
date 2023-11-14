@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-09-11T18:00:00.000Z
 title: minigc読み(アロケーションまとめ)
-slug: minigc1
+postSlug: minigc1
 featured: false
 draft: false
 tags:

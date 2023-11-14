@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-11-01T22:29:54.000Z
 title: 歩く習慣を身に付けたい
-slug: mh-now-walking
+postSlug: mh-now-walking
 featured: false
 draft: false
 tags:

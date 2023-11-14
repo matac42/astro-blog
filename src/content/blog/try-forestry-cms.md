@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-01-30T19:32:14.000Z
 title: Try FORESTRY CMS
-slug: "try-forestry-cms"
+postSlug: "try-forestry-cms"
 featured: false
 draft: false
 tags: []

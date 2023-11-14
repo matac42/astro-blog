@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-11-11T22:00:37.000Z
 title: 今日はカレーパーティーの準備をした
-slug: lab-curry-pre
+postSlug: lab-curry-pre
 featured: false
 draft: false
 tags:

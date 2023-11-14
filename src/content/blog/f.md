@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-08-31T18:51:00.000Z
 title: 背景のある音ゲーの曲
-slug: f
+postSlug: f
 featured: false
 draft: false
 tags:

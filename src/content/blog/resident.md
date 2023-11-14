@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-10-15T22:43:00.000Z
 title: Beatmania IIDX RESIDENTプレー納めした
-slug: resident
+postSlug: resident
 featured: false
 draft: false
 tags:

@@ -2,7 +2,7 @@
 author: matac
 pubDatetime: 2023-02-01T15:15:32.000Z
 title: Setting FORESTRY CMS preview with AstroPaper theme
-slug: "setting-forestry-cms-preview-with-astropaper-theme"
+postSlug: "setting-forestry-cms-preview-with-astropaper-theme"
 featured: false
 draft: false
 tags: []
