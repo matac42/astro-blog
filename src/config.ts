@@ -1,6 +1,6 @@
-import type { SocialObjects } from "./types";
+import type { Site, SocialObjects } from "./types";
 
-export const SITE = {
+export const SITE: Site = {
   website: "https://blog.matac.info/",
   author: "matac",
   desc: "matac blog",
@@ -9,6 +9,8 @@ export const SITE = {
   lightAndDarkMode: true,
   postPerPage: 100,
 };
+
+export const LOCALE = ["en-EN"]; // set to [] to use the environment default
 
 export const LOGO_IMAGE = {
   enable: false,

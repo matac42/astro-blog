@@ -33,4 +33,12 @@ export default defineConfig({
     },
     extendDefaultPlugins: true,
   },
+  vite: {
+    ssr: {
+      external: ['@resvg/resvg-js']
+    },
+    optimizeDeps: {
+      exclude: ["@resvg/resvg-js"]
+    }
+  }
 });

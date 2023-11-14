@@ -57,3 +57,17 @@ node_modules
 
 public/admin/index.html
 public/admin/assets/
+# ignore .astro directory
+.astro
+
+# ignore Jampack cache files
+.jampack/
+
+# yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*

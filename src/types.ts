@@ -1,14 +1,12 @@
-export interface Frontmatter {
+export type Site = {
+  website: string;
+  author: string;
+  desc: string;
   title: string;
   ogImage?: string;
-  description: string;
-  author: string;
-  datetime: string;
-  slug: string;
-  featured: boolean;
-  draft: boolean;
-  tags: string[];
-}
+  lightAndDarkMode: boolean;
+  postPerPage: number;
+};
 
 export type SocialObjects = {
   name: SocialMedia;

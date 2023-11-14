@@ -10,3 +10,6 @@
 !package.json
 !.prettierrc
 !.eslintrc.json
+!astro.config.ts
+!.eslintrc.js
+!README.md
