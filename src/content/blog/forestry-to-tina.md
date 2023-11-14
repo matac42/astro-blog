@@ -36,7 +36,7 @@ Forestry CMS がいつの間にか Tina CMS に化けていたので，とりあ
 
 > 引用部分
 
-```
+```erlang
 identity(X) -> X.
 ```
 

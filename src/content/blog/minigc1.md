@@ -30,7 +30,7 @@ _template: blog_post
 
 ### Header
 
-```
+```c
 typedef struct header {
   size_t flags;
   size_t size;
@@ -42,15 +42,15 @@ flagsはFL_ALLOC, FL_MARKといったデータの状態を表すフラグを保�
 
 ブロックは以下のような形でデータに対して`Header`がつく。
 
-```
+```md
 +----------+-----------+
-| Header |    data     |
+| Header | data |
 +----------+-----------+
 ```
 
 ### GC_Heap
 
-```
+```c
 typedef struct gc_heap {
   Header *slot;
   size_t size;
@@ -72,7 +72,7 @@ slotはヘッダのリンクリストを保持する。sizeはヒープ領域の
 
 #### コード
 
-```
+```c
 static Header *add_heap(size_t req_size) {
   void *p;
   Header *align_p;
@@ -110,7 +110,7 @@ static Header *add_heap(size_t req_size) {
 
 (1)でヒープの数が`HEAP_LIMIT`を超えていないか確認する。超えていた場合はエラーを出力する。(2)ではヒープの最小サイズを`TINY_HEAP_SIZE`としている。なのでこれより小さいヒープ領域は存在しないことになる。(3)では実際にヒープ領域をアロケートしている。`PTRSIZE`を足しているのはアラインメントした時に終端が溢れないようにするためだ。ちなみに`PTRSIZE`はポインタ型のサイズを表しており、32bitアーキテクチャなら4バイト、64bitアーキテクチャなら8バイトになる。また、ヒープ領域に対しても`Header`が付与されるため`HEADER_SIZE`を足している。なのでヒープ領域は以下のような形になる。
 
-```
+```md
 +------------------------------+---------------------+--------------------------+
 | Header(HEADER_SIZE) | heap(req_size) | padding(< PTRSIZE) |
 +------------------------------+---------------------+--------------------------+
@@ -120,7 +120,7 @@ static Header *add_heap(size_t req_size) {
 
 `ALIGN`マクロは以下のように定義される。例えば`x = 5, a = 4`でALIGNすると8となる。
 
-```
+```c
 #define ALIGN(x, a) (((x) + (a - 1)) & ~(a - 1))
 ```
 
@@ -128,7 +128,7 @@ static Header *add_heap(size_t req_size) {
 
 #### コード
 
-```
+```c
 static Header *grow(size_t req_size) {
   Header *cp, *up;
 
@@ -151,7 +151,7 @@ static Header *grow(size_t req_size) {
 
 #### コード
 
-```
+```c
 void mini_gc_free(void *ptr) {
   Header *target, *hit;
 
@@ -196,7 +196,7 @@ mini_gc_freeはヒープ上のブロックを解放する。解放とはつま�
 
 `NEXT_HEADER`マクロの定義は以下の通りで、ヘッダのサイズ(x + 1)とデータのサイズ(x->size)を足して次のヘッダのアドレスとして返している。
 
-```
+```c
 #define NEXT_HEADER(x) ((Header *)((size_t)(x + 1) + x->size))
 ```
 
@@ -204,7 +204,7 @@ mini_gc_freeはヒープ上のブロックを解放する。解放とはつま�
 
 #### コード
 
-```
+```c
 void *mini_gc_malloc(size_t req_size) {
   Header *p, *prevp;
   size_t do_gc = 0;

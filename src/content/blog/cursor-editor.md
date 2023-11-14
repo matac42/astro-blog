@@ -37,7 +37,7 @@ CursorからAI要素を抜いた部分、つまりVSCodeな部分では問題な
 最後にCursorのAIでほとんどを記述した赤黒木のコードを載せておく。
 一応コンパイルできて、insertができるところまではみてるがちゃんと動くかはわからない。
 
-```
+```c
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>

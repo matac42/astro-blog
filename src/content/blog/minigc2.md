@@ -19,7 +19,7 @@ _template: blog_post
 
 minigcのGCは`mini_gc_malloc`時に`garbage_collect`が呼ばれることで動作する。
 
-```
+```c
 void garbage_collect(void) {
   size_t i;
 
@@ -59,7 +59,7 @@ GCアルゴリズムはmark & sweep GCだ。マークするのはルートから
 
 #### コード
 
-```
+```c
 static void gc_mark(void *ptr) {
   GC_Heap *gh;
   Header *hdr;
@@ -97,7 +97,7 @@ static void gc_mark(void *ptr) {
 
 `is_pointer_to_heap`はポインタがヒープ内を指しているか確認している。ヒープ内を指していればそのヒープのアドレスを返す。`cache`にはヒープのアドレスが入る。おそらく次に`gc_mark`されるオブジェクトが同じヒープに存在する可能性が高いからだろう。
 
-```
+```c
 static GC_Heap *is_pointer_to_heap(void *ptr) {
   size_t i;
 
@@ -118,7 +118,7 @@ static GC_Heap *is_pointer_to_heap(void *ptr) {
 
 `get_header`関数はブロックのヘッダを`gh`ヒープ上から探して返している。
 
-```
+```c
 static Header *get_header(GC_Heap *gh, void *ptr) {
   Header *p, *pend, *pnext;
 
@@ -135,7 +135,7 @@ static Header *get_header(GC_Heap *gh, void *ptr) {
 
 (1)の条件をクリアしたブロックに対し(2)でマークする。(3)では`gc_mark_range`を呼び出し、子ブロックに対しても`gc_mark`を行う。`gc_mark_range`関数は以下のとおりだ。
 
-```
+```c
 static void gc_mark_range(void *start, void *end) {
   void *p;
 
@@ -153,7 +153,7 @@ static void gc_mark_range(void *start, void *end) {
 
 #### コード
 
-```
+```c
 static void gc_mark_register(void) {
   jmp_buf env;
   size_t i;
@@ -175,7 +175,7 @@ static void gc_mark_register(void) {
 
 #### コード
 
-```
+```c
 static void gc_mark_stack(void) {
   set_stack_end();
   if (stack_start > stack_end) {
@@ -190,7 +190,7 @@ static void gc_mark_stack(void) {
 
 最初に`set_stack_end`している。
 
-```
+```c
 static void set_stack_end(void) {
   void *tmp;
   long dummy;
@@ -204,7 +204,7 @@ static void set_stack_end(void) {
 
 `stack_end`は`set_stack_end`でセットされるが`set_stack_start`は`gc_init`でセットされている。
 
-```
+```c
 void gc_init(void) {
   long dummy;
 
@@ -224,7 +224,7 @@ bdw-gcを参考にしているらしい。この辺はまた別で調べよう�
 
 #### コード
 
-```
+```c
 static void gc_sweep(void) {
   size_t i;
   Header *p, *pend, *pnext;

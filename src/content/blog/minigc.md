@@ -126,7 +126,7 @@ gc処理が含まれている
 
 ## add_heap
 
-```
+```c
 if (gc_heaps_used >= HEAP_LIMIT) {
   fputs("OutOfMemory Error", stderr);
   abort();
@@ -135,14 +135,14 @@ if (gc_heaps_used >= HEAP_LIMIT) {
 
 ヒープの数がリミットを超えたらエラー
 
-```
+```c
 if (req_size < TINY_HEAP_SIZE)
     req_size = TINY_HEAP_SIZE;
 ```
 
 ヒープの最小サイズに合わせる
 
-```
+```c
 p = malloc(req_size + PTRSIZE + HEADER_SIZE);
   if (!p)
     return NULL;
@@ -152,7 +152,7 @@ p = malloc(req_size + PTRSIZE + HEADER_SIZE);
 PTRSIZEを足しているのはアラインメントした時に終端が溢れないようにするため。
 ヒープ領域に対してもHeaderが付与されている。
 
-```
+```c
 align_p = gc_heaps[gc_heaps_used].slot = (Header *)ALIGN((size_t)p, PTRSIZE);
   req_size = gc_heaps[gc_heaps_used].size = req_size;
   align_p->size = req_size;
@@ -177,7 +177,7 @@ growとは？
 
 ## mini_gc_malloc
 
-```
+```c
 if ((prevp = free_list) == NULL) {
     if (!(p = add_heap(TINY_HEAP_SIZE))) {
       return NULL;
@@ -188,7 +188,7 @@ if ((prevp = free_list) == NULL) {
 
 free_listがNULLだったら作る？
 
-```
+```c
 else {
         /* too big */
         p->size -= (req_size + HEADER_SIZE);
@@ -200,7 +200,7 @@ sizeが大きすぎる場合、一個前のブロックまで戻ってそこで�
 
 prevpは今から割り当てるブロックの前のブロックを表している。なのでprevp->next_freeが次に割り当てされるブロックのヘッダを指している。
 
-```
+```c
 free_list = prevp;
 FL_SET(p, FL_ALLOC);
 return (void *)(p + 1);
@@ -211,7 +211,7 @@ prevpをfree_listに入れているのはなんでだ？
 malloc時にGCしていることがわかる
 もっと詳しくいうとfree_listを辿り切った時(freeがなかった時)にGCする
 
-```
+```c
 if (p == free_list) {
       if (!do_gc) {
         garbage_collect();
@@ -229,14 +229,14 @@ target, hit
 
 - free_listに入れるデータとfree_listに入れる位置を示すhit
 
-```
+```c
 target = (Header *)ptr - 1;
 ```
 
 \*ptrはデータの先頭部分を指している
 -1することでデータのヘッダ部分を指すようにしている
 
-```
+```c
 for (hit = free_list; !(target > hit && target < hit->next_free); hit = hit->next_free)
 ```
 
@@ -249,7 +249,7 @@ hitとhit->next_freeの間もしくは終端にtargetが入る
 | hit | target | hit->next_free |
 | hit | target |
 
-```
+```c
 if (hit >= hit->next_free && (target > hit || target < hit->next_free)
 ```
 

@@ -20,7 +20,7 @@ _template: blog_post
 
 今日は主にFrom領域からTo領域へブロックをコピーする`copying()`を書いた。
 
-```
+```c
 void copying(void) {
   Block_Header *p;
   void *pfree = (void *)to_start + 1;
@@ -38,7 +38,7 @@ void copying(void) {
 
 From領域のブロックを頭から全部見ていき、`FL_ALLOC`フラグが立っている、つまりアロケートされて使用されているブロックのみをTo領域へコピーしている。その際`pfree`がカーソルとなってTo領域にブロックを詰めて配置するいわゆるコンパクションが行われる。コピーする関数`copy()`は次の通り。
 
-```
+```c
 Block_Header *copy(Block_Header *from_block, void *pfree) {
   Block_Header *to_block;
 
@@ -51,7 +51,7 @@ Block_Header *copy(Block_Header *from_block, void *pfree) {
 
 コピーは`memcpy()`で行う。`pfree`の位置に`from_block`を配置する。配置後は`pfree`を配置したブロックのすぐ後ろに設定する。コピーした後はFrom領域とTo領域を入れ替える必要がある。それは`swap()`で行う。
 
-```
+```c
 void swap() {
   Heap_Header *tmp;
 

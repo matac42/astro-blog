@@ -29,7 +29,7 @@ Warpのリポジトリのissueとしても上がっている。
 
 とは言っても私が`bindkey`を使用しているのは以下の部分のみだ。
 
-```
+```zsh
 # ghq with peco
 function peco-src () {
   local selected_dir=$(ghq list -p | peco --query "$LBUFFER")
@@ -62,7 +62,7 @@ bindkey '^R' peco-history-selection
 
 ごめんなさい。Workaroundってほどのものでもない。結構ダサい。
 
-```
+```zsh
 # ghq with peco (no bindkey)
 function g () {
   local selected_dir=$(ghq list -p | peco --query "$LBUFFER")

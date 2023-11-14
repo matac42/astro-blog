@@ -14,7 +14,7 @@ description: Yet Another Erlang Problems 問題31 順列の問題を解いた
 
 リスト Xs から N 個の要素を選ぶ順列を求める関数 permutation(N, Xs) を定義してください。なお、生成した順列はリストに格納して返すものとします。
 
-```
+```bash
 > yaep:permutation(3, [a, b, c]).
 [[a,b,c],[a,c,b],[b,a,c],[b,c,a],[c,a,b],[c,b,a]]
 ```
@@ -59,7 +59,7 @@ permutation(N, Xs) when N > 0 -> permutation(N, Xs, []).
 
 `permutation(3, [a, b, c])`を debugger で流れを追ったところ，次のようになっていた．
 
-```
+```erlang
 permutation(3, [a, b, c], [a]) X = a
     permutation(2, [b, c], [a]) X = b
         permutation(1, [c], [b, a]) X = c
@@ -93,7 +93,7 @@ yaep:permutation(F, 3, [a, b, c]).
 
 追記: 出力のしかたがいまいち．次のようにすると良い．
 
-```
+```erlang
 F = fun(X) -> io:format('~w~n', [X]) end.
 yaep:permutation(F, 3, [a, b, c]).
 ```
@@ -127,7 +127,7 @@ yaep:permutation(F, 3, [a, b, c]).
 
 図にするとこんな感じだと思う．
 
-```
+```bash
 a ---- b ---- c
    |
    |-- c ---- b
@@ -135,7 +135,7 @@ a ---- b ---- c
 
 これを`b`から始める場合と`c`から始める場合も行う．
 
-```
+```bash
 b ---- a ---- c
    |
    |-- c ---- a
@@ -148,7 +148,7 @@ c ---- a ---- b
 `まずは~を取り出して`というのがプログラム上では以下の`lists:foreach`の部分に当たる．
 `まずはXsからXを取り出して`と言った方がいいだろうか．
 
-```
+```erlang
 lists:foreach(
     fun(X) ->
         permutation(F, N - 1, lists:delete(X, Xs), [X | A])

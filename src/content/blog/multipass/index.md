@@ -21,7 +21,7 @@ Ubuntu Onlyのようだが、試しに使ってみた。
 
 `multipass`コマンドが使える。次のように、VMを作成起動する。imageのダウンロードなどを行っていると思われるので、少々時間がかかる。
 
-```
+```bash
 $multipass launch --name matac
 Launched: matac
 ```
@@ -30,7 +30,7 @@ Launched: matac
 
 VMの一覧を見る。Ubuntu 20.04 LTSで起動していることや、IPアドレスが振られていることがわかる。
 
-```
+```bash
 $multipass list
 Name                    State             IPv4             Image
 matac                   Running           192.168.64.2     Ubuntu 20.04 LTS
@@ -38,7 +38,7 @@ matac                   Running           192.168.64.2     Ubuntu 20.04 LTS
 
 VMにLoginする。Ubuntuだ(当たり前)。
 
-```
+```bash
 $multipass shell matac
 Welcome to Ubuntu 20.04.4 LTS (GNU/Linux 5.4.0-109-generic aarch64)
 
@@ -69,7 +69,7 @@ ubuntu@matac:~$
 
 情報を見る。デフォルトではディスク容量が4.7GB、メモリが970MBのようだ。
 
-```
+```bash
 $multipass info matac
 Name:           matac
 State:          Running
@@ -84,7 +84,7 @@ Mounts:         --
 
 execしてみる。なんかコンテナっぽい感じで使える。
 
-```
+```bash
 $multipass exec matac -- lsb_release -a
 No LSB modules are available.
 Distributor ID:	Ubuntu
@@ -95,7 +95,7 @@ Codename:	focal
 
 helpしてみる。かなりシンプルなコマンドだと思う。
 
-```
+```bash
 $multipass help
 Usage: multipass [options] <command>
 Create, control and connect to Ubuntu instances.

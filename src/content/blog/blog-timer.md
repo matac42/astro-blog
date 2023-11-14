@@ -20,7 +20,7 @@ _template: blog_post
 
 以前[Raycastで引数付きのスクリプトを実行する](/posts/raycast-param)でブログページの元となるMarkdownファイルを自動で作成してくれるスクリプトを書いてそれを使っているので、そこに時間計測のスクリプトを追記してあげると良さそうだ。ということで以下を追記した。
 
-```
+```bash
 osascript -e 'display notification "ブログ作成開始"';
 sleep 600; osascript -e 'display notification "10分経過"' -e 'beep 10';
 sleep 600; osascript -e 'display notification "20分経過"' -e 'beep 10';
@@ -29,7 +29,7 @@ sleep 600; osascript -e 'display notification "終了"' -e 'beep 10';
 
 osascriptの`display notification`で指定した文言をMacOSの通知に表示することができる。この場合は「ブログ作成開始」の通知が出る。その後は一定時間経過すると同じように「10分経過」、「20分経過」、「終了」というように通知を出す。単純だがこれでやりたいことはできた。osascriptを使ってみたついでに普通のタイマーも作ってみた。
 
-```
+```bash
 #!/bin/bash
 
 # Required parameters:

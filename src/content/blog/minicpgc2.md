@@ -22,7 +22,7 @@ _template: blog_post
 
 ## mini_cpgc_malloc
 
-```
+```c
 void *mini_cpgc_malloc(size_t req_size) {
   Object_Header *p;
 
@@ -44,7 +44,7 @@ mallocするにあたってヒープ領域上で使用されている部分と�
 
 ## mini_cpgc_free
 
-```
+```c
 void mini_cpgc_free(void *ptr) {
   Object_Header *target, *hit;
 

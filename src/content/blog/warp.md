@@ -29,7 +29,7 @@ _template: blog_post
 iTermの時と大差なく使えているが個人的に不便だと感じている部分だけ説明しておく。
 私は~/.zshrcにこんな設定を入れている。
 
-```
+```zsh
 # ghq with peco
 function peco-src () {
   local selected_dir=$(ghq list -p | peco --query "$LBUFFER")

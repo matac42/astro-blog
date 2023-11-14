@@ -15,17 +15,17 @@ _template: blog_post
 
 今日はこのブログのテーマをアップデートしたのだが、Amplifyでデプロイする時に問題が発生した。以下のようなWarningが出力され、Non-Zero Exit Codeで終了してしまったのだ。
 
-```
+```md
 EBADENGINE Unsupported engine {
-npm WARN EBADENGINE   package: 'astro@3.1.3',
-npm WARN EBADENGINE   required: { node: '>=18.14.1', npm: '>=6.14.0' },
-npm WARN EBADENGINE   current: { node: 'v16.19.0', npm: '8.19.3' }
+npm WARN EBADENGINE package: 'astro@3.1.3',
+npm WARN EBADENGINE required: { node: '>=18.14.1', npm: '>=6.14.0' },
+npm WARN EBADENGINE current: { node: 'v16.19.0', npm: '8.19.3' }
 npm WARN EBADENGINE }
 ```
 
 どうやら現在のAstroはnode v18.14.1以上を要求するらしい。Amplifyのdefault build imageのAmazon Linux2を使用する場合、現状はnode v16.19.0のようなのでこれではビルドできない。ただしバージョンを上げることは可能だ。Amplifyのbuild image settingsには`Live package updates`機能があるのでこれでv18を指定すればビルド時間がは伸びるもののnodeのバージョンアップが走る。ということでnodeのバージョンを18に指定して再度デプロイを試みる。しかしまたWarningを吐いてその後Non-Zero Exit Codeしてしまった。
 
-```
+```md
 2023-11-14T07:32:38.097Z [WARNING]: node: /lib64/libm.so.6: version `GLIBC_2.27' not found (required by node)
 2023-11-14T07:32:38.097Z [WARNING]: node: /lib64/libc.so.6: version `GLIBC_2.28' not found (required by node)
 ```

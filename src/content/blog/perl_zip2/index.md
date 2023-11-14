@@ -71,7 +71,7 @@ print Dumper(\@ab);
 
 # 実行結果
 
-```
+```bash
 $perl zip.pl
 $VAR1 = [
           [

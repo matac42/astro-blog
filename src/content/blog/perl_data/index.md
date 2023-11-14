@@ -63,7 +63,7 @@ __DATA__
 hoge
 ```
 
-```
+```bash
 $perl test.pl
 test.pl
 12

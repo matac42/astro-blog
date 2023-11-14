@@ -30,7 +30,7 @@ Registered domainのName serversは`whois`コマンドで参照できます。
 完全に引くことができなくなるわけではないですが、簡単に例を出すと単純な`dig`は返ってこなくなりますが、
 Name serverを指定すれば返ってくるという感じです。
 
-```
+```bash
 dig m4t4c.link # 返ってこない
 
 dig m4t4c.link @ns-1143.awsdns-14.org # 返ってくる
@@ -52,7 +52,7 @@ dig m4t4c.link @ns-1143.awsdns-14.org # 返ってくる
 
 以下のようなコードを書きました。(まだforの使い方がよくわかっていない人のコード)
 
-```
+```bash
 resource "aws_route53_zone" "m4t4c_link" {
   comment = "HostedZone created by Route53 Registrar"
   name    = "m4t4c.link"
@@ -102,7 +102,7 @@ NSレコードを編集しないのがセオリーとなります。
 
 最後にコード全体を載せておきます。このコードはApply complete!まで5〜20分ほどかかります。
 
-```
+```bash
 terraform {
   required_providers {
     aws = {

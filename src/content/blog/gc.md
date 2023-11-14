@@ -48,7 +48,7 @@ C拡張ライブラリを用いることでCでRubyのライブラリを書く�
 
 ### hello_world.c
 
-```
+```c
 #include "ruby.h"
 
 VALUE hello_world(VALUE self)
@@ -67,7 +67,7 @@ void Init_hello_world()
 
 ### extconf.rb
 
-```
+```ruby
 require 'mkmf'
 
 create_makefile('hello_world')
@@ -75,7 +75,7 @@ create_makefile('hello_world')
 
 ### hello.rb
 
-```
+```ruby
 require './hello_world'
 
 hello_world()
@@ -83,7 +83,7 @@ hello_world()
 
 以上のファイルを用意したら以下のコマンドを実行する。`Hello World`と出力されるはずだ。
 
-```
+```bash
 ruby extconf.rb
 make
 ruby hello.rb
