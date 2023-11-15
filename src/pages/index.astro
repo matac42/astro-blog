@@ -22,7 +22,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <Layout>
   <Header />
   <main id="main-content">
-    <section id="hero">
+    <!-- <section id="hero">
       <h1 class="mr-2">Hi!👋 I'm MATAC</h1>
       <a
         target="_blank"
@@ -54,15 +54,15 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           </div>
         )
       }
-    </section>
+    </section> -->
 
-    <Hr />
+    <!-- <Hr /> -->
 
     {
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
-            <h2>Featured</h2>
+            <h2>おすすめの記事</h2>
             <ul>
               {featuredPosts.map(({ data }) => (
                 <Card
@@ -79,14 +79,14 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     }
 
     <section id="recent-posts">
-      <h2>Recent Posts</h2>
+      <h2>最近の投稿</h2>
       <ul>
         {
           sortedPosts
             .filter(({ data }) => !data.featured)
             .map(
               ({ data }, index) =>
-                index < 4 && (
+                index < 7 && (
                   <Card
                     href={`/posts/${slugify(data)}`}
                     frontmatter={data}
