@@ -1,6 +1,7 @@
 ---
 title: "Perlの__DATA__"
 pubDatetime: 2022-04-13T23:58:32+09:00
+postSlug: perl_data
 draft: false
 tags:
   - perl

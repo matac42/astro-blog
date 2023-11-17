@@ -1,6 +1,7 @@
 ---
 title: "KLab Server Side Campに参加しました"
 pubDatetime: 2022-09-07T14:44:38+09:00
+postSlug: klab_server_side_camp
 draft: false
 tags:
   - server_side

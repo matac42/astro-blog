@@ -1,6 +1,7 @@
 ---
 title: "Test"
 pubDatetime: 2022-02-27T23:31:55+09:00
+postSlug: test
 draft: false
 tags:
   - random

@@ -1,6 +1,7 @@
 ---
 title: "実存主義の本"
 pubDatetime: 2022-04-06T23:04:16+09:00
+postSlug: existentialism_books
 draft: false
 tags:
   - philosophy

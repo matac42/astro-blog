@@ -1,6 +1,7 @@
 ---
 title: "接続詞を失ってしまった卒論"
 pubDatetime: 2022-04-12T23:57:41+09:00
+postSlug: lost_conjunction
 draft: false
 tags:
   - paper

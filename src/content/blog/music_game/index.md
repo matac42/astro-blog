@@ -1,6 +1,7 @@
 ---
 title: "Why sound games are so much fun"
 pubDatetime: 2022-11-07T21:57:05+09:00
+postSlug: music_game
 featured: false
 draft: false
 tags:

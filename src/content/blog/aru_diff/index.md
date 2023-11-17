@@ -1,6 +1,7 @@
 ---
 title: "生る　有る　在る　或る"
 pubDatetime: 2022-04-19T10:16:21+09:00
+postSlug: aru_diff
 draft: false
 tags:
   - existentialism

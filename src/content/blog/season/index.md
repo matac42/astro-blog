@@ -1,6 +1,7 @@
 ---
 title: "季節を感じる"
 pubDatetime: 2022-11-08T23:55:39+09:00
+postSlug: season
 featured: false
 draft: false
 tags:

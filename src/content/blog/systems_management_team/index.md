@@ -1,6 +1,7 @@
 ---
 title: "実験の情報システム管理班"
 pubDatetime: 2022-04-15T00:18:04+09:00
+postSlug: systems_management_team
 draft: false
 tags:
   - infra

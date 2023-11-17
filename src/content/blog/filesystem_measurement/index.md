@@ -1,6 +1,7 @@
 ---
 title: "Filesystem measurement"
 pubDatetime: 2022-04-18T14:37:02+09:00
+postSlug: filesystem_measurement
 draft: false
 tags:
   - filesystem

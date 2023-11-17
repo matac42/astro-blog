@@ -1,6 +1,7 @@
 ---
 title: "HugoのGitHub Pagesでブログのアクセス解析をしたい"
 pubDatetime: 2022-04-08T02:02:37+09:00
+postSlug: google_analytics
 draft: false
 tags:
   - hugo

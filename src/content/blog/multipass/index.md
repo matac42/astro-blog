@@ -1,6 +1,7 @@
 ---
 title: "Multipass"
 pubDatetime: 2022-04-22T12:05:27+09:00
+postSlug: multipass
 draft: false
 tags:
   - infra

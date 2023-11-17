@@ -1,6 +1,7 @@
 ---
 title: "AtCoder拡張機能"
 pubDatetime: 2022-04-18T11:31:07+09:00
+postSlug: atcoder_scripts_manager
 draft: false
 tags:
   - atcoder

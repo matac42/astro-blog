@@ -1,6 +1,7 @@
 ---
 title: "Wireshark"
 pubDatetime: 2022-04-22T11:29:06+09:00
+postSlug: wireshark
 draft: false
 tags:
   - infra

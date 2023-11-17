@@ -1,6 +1,7 @@
 ---
 title: "Pythonのzipに準ずるPerlのzip"
 pubDatetime: 2022-04-04T00:48:06+09:00
+postSlug: perl_zip2
 draft: false
 tags:
   - perl

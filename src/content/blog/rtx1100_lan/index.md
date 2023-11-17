@@ -1,6 +1,7 @@
 ---
 title: "RTX1100のセグメント間の通信"
 pubDatetime: 2022-11-14T22:47:36+09:00
+postSlug: rtx1100_lan
 draft: false
 tags:
   - infra

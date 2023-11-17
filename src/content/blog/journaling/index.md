@@ -1,6 +1,7 @@
 ---
 title: "Journaling Filesystem"
 pubDatetime: 2022-04-18T14:41:26+09:00
+postSlug: journaling
 draft: false
 tags:
   - filesystem

@@ -1,6 +1,7 @@
 ---
 title: "AtCoder ABC 231Aのコード削ってみた"
 pubDatetime: 2022-04-05T03:16:05+09:00
+postSlug: atcoder_abc_231a
 draft: false
 tags:
   - perl

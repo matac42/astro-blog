@@ -1,6 +1,7 @@
 ---
 title: "Perlの出力関数printとsayの違い"
 pubDatetime: 2022-04-05T00:31:20+09:00
+postSlug: print_say
 draft: false
 tags:
   - perl

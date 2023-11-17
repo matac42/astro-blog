@@ -1,6 +1,7 @@
 ---
 title: "Annict"
 pubDatetime: 2022-11-08T22:05:11+09:00
+postSlug: annict
 draft: false
 tags:
   - random

@@ -1,6 +1,7 @@
 ---
 title: "大学院の履修登録記録"
 pubDatetime: 2022-04-08T00:01:32+09:00
+postSlug: timetable
 draft: false
 tags:
   - random
