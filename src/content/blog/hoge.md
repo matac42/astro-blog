@@ -1,8 +1,8 @@
 ---
 author: matac
 pubDatetime: 2023-11-17T13:19:41.000Z
-title: test
-postSlug: test
+title: hoge
+postSlug: hoge
 featured: false
 draft: true
 tags:
