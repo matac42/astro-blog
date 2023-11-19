@@ -43,7 +43,7 @@ const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
 
   return (
     <>
-      ・{date}
+      {date}
       {/* <span aria-hidden="true"> </span>
       <span className="sr-only">&nbsp;at&nbsp;</span>
       {time} */}
