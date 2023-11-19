@@ -124,6 +124,14 @@
   pre > code {
     white-space: pre;
   }
+
+  /* AstroのグローバルCSSファイルに追加 */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
 }
 
 @layer components {
