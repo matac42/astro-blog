@@ -125,7 +125,6 @@
     white-space: pre;
   }
 
-  /* AstroのグローバルCSSファイルに追加 */
   table {
     display: block;
     overflow-x: auto;
