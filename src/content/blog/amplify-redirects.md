@@ -90,7 +90,7 @@ Nginxなどのミドルウェアを使っている場合はドメインもパス
 しかし今回はNginxを使った構成ではない。
 このブログは[AWS Amplify](https://aws.amazon.com/amplify/)を使用しているので、
 AWSの方でどうにかするのが良いだろう。
-ALBとか使うのかな。
+ELBとか使うのかな。
 
 調べてみると、
 Amplifyには[Rewrites and redirects](https://docs.aws.amazon.com/amplify/latest/userguide/redirects.html)という、
