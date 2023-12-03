@@ -1,7 +1,7 @@
 ---
 author: matac
 pubDatetime: 2023-12-02T23:37:25.000Z
-title: TDDわいわい会に参加した
+title: モブプロに参加した
 postSlug: tdd-waiwai
 featured: false
 draft: false
@@ -9,11 +9,11 @@ tags:
   - random
 ogImage: ""
 description: |
-  TDDわいわい会に参加した
+  モブプロに参加した
 _template: blog_post
 ---
 
-今日は「TDDわいわい会」というモブプロイベントに参加してきた。
+今日TDDベースのモブプロイベントに参加してきた。
 軽く用語の説明からする。
 
 ## TDDとは
@@ -52,4 +52,4 @@ TDDは慣れないとなかなか難しい。今回感じたコツは以下の�
 そうそう。書いたことがない言語を習得するために、モブプロするのは良いなと思った。
 その時は一人はその言語が得意な人がいると効果的かもしれない。
 
-またTDDわいわいしたいな。
+またTDDモブプロしたいな〜
