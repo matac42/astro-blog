@@ -1,7 +1,7 @@
 ---
 author: matac
 pubDatetime: 2023-12-19T21:05:05.000Z
-title: バスキーのみんな〜「習慣」あるかい？
+title: 「習慣」あるかい？
 postSlug: habit
 featured: false
 draft: false
