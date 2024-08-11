@@ -1,4 +1,9 @@
 {
     "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.vertical": "hidden"
+    "editor.scrollbar.vertical": "hidden",
+    "workbench.colorTheme": "Visual Studio Light",
+    "zenMode.fullScreen": true,
+    "zenMode.hideStatusBar": true,
+    "zenMode.hideActivityBar": true,
+    "zenMode.hideLineNumbers": true,
 }
