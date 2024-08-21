@@ -6,4 +6,18 @@
     "zenMode.hideStatusBar": true,
     "zenMode.hideActivityBar": true,
     "zenMode.hideLineNumbers": true,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 80,
+    "editor.wrappingIndent": "none",
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "off",
+    "editor.occurrencesHighlight": "off",
+    "editor.renderLineHighlight": "none",
+    "editor.fontFamily": "YuGothic, 'Yu Gothic'",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 22,
+    "editor.scrollbar.vertical": "hidden",
+    "backgroundCover.enabled": true,
+    "backgroundCover.opacity": 0.4,
+    "backgroundCover.randomImageFolder": "/Users/matac/Pictures/p0521.png"
 }
