@@ -1,12 +1,12 @@
 ---
-import { SITE } from "@config";
-import Layout from "@layouts/Layout.astro";
-import Main from "@layouts/Main.astro";
-import Header from "@components/Header.astro";
-import Footer from "@components/Footer.astro";
-import Card from "@components/Card";
-import LinkButton from "@components/LinkButton.astro";
-import slugify from "@utils/slugify";
+import { SITE } from "@/config";
+import Layout from "@/layouts/Layout.astro";
+import Main from "@/layouts/Main.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Card from "@/components/Card.astro";
+import LinkButton from "@/components/LinkButton.astro";
+import slugify from "@/utils/slugify";
 import type { CollectionEntry } from "astro:content";
 
 export interface Props {
@@ -65,14 +65,15 @@ const next = pageNum < totalPages ? "" : "disabled";
 </Layout>
 
 <style>
+@reference "../styles/global.css";
   .pagination-wrapper {
     @apply mb-8 mt-auto flex justify-center;
   }
   .disabled {
-    @apply pointer-events-none select-none opacity-50 hover:text-skin-base group-hover:fill-skin-base;
+    @apply pointer-events-none select-none opacity-50 hover:text-skin-text-base group-hover:fill-skin-text-base;
   }
   .disabled-svg {
-    @apply group-hover:!fill-skin-base;
+    @apply group-hover:!fill-skin-text-base;
   }
 </style>
 

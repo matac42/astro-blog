@@ -63,6 +63,9 @@ public/admin/assets/
 # ignore Jampack cache files
 .jampack/
 
+# Pagefind
+public/pagefind/
+
 # yarn
 .yarn/*
 !.yarn/patches

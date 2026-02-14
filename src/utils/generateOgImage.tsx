@@ -1,5 +1,5 @@
-import satori, { SatoriOptions } from "satori";
-import { SITE } from "@config";
+import satori, { type SatoriOptions } from "satori";
+import { SITE } from "@/config";
 
 const fetchFonts = async () => {
   // Regular Font
