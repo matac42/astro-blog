@@ -12,13 +12,13 @@ featured: true
 ## moon_child
 
 <div class="iframe-aspect">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/arfiV8T7SUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>\</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qU64rp6j5L4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>\</iframe>
 </div>
 
 ## ラストセンチュリーメランコリック
 
 <div class="iframe-aspect">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ndkgaCDVg-A?si=zhlD8bhoB3Fj5rm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UIEP-CS1sOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 ## LOVE B.B.B
@@ -30,5 +30,5 @@ featured: true
 ## Real
 
 <div class="iframe-aspect">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eS3GuWF2e4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MHI789iZWg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
