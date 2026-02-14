@@ -3,7 +3,7 @@ author: matac
 pubDatetime: 2026-02-14T12:00:00.000Z
 title: AstroPaper v3 → v5 アップグレード完全ガイド（Astro 5 + Tailwind v4 移行）
 postSlug: "astropaper-v3-to-v5-upgrade-guide"
-featured: true
+featured: false
 draft: false
 tags:
   - astro
