@@ -27,6 +27,14 @@ description: |
 
 という流れが必要でした。これだと「ちょっとブログ書こうかな」というハードルが地味に高い。ブラウザだけで完結するエディタがあれば、もっと気軽に書けるんじゃないかと思って作りました。
 
+## 全体構成
+
+まず全体像をお見せします。
+
+![astro-blog & blog-editor 構成図](/img/blog-editor-architecture.svg)
+
+blog-editor からブログの記事を管理して、GitHub 経由で astro-blog に反映、Amplify が自動デプロイするという流れです。
+
 ## 技術スタック
 
 - **Next.js 15** (App Router)
