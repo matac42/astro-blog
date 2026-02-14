@@ -1,11 +1,12 @@
 ---
-import Layout from "@layouts/Layout.astro";
-import Header from "@components/Header.astro";
-import Footer from "@components/Footer.astro";
-import Tag from "@components/Tag.astro";
-import Datetime from "@components/Datetime";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Tag from "@/components/Tag.astro";
+import Datetime from "@/components/Datetime.astro";
 import type { CollectionEntry } from "astro:content";
-import { slugifyStr } from "@utils/slugify";
+import { render } from "astro:content";
+import { slugifyStr } from "@/utils/slugify";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -16,7 +17,7 @@ const { post } = Astro.props;
 const { title, author, description, ogImage, canonicalURL, pubDatetime, tags } =
   post.data;
 
-const { Content } = await post.render();
+const { Content } = await render(post);
 
 const ogImageUrl = typeof ogImage === "string" ? ogImage : ogImage?.src;
 const ogUrl = new URL(
@@ -60,6 +61,7 @@ const ogUrl = new URL(
 </Layout>
 
 <style>
+@reference "../styles/global.css";
   main {
     @apply mx-auto w-full max-w-4xl px-4 pb-12;
   }

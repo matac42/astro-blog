@@ -1,5 +1,5 @@
 ---
-import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
 
 interface StringTitleProp {
   pageTitle: string;
@@ -36,6 +36,7 @@ const { props } = Astro;
 </main>
 
 <style>
+@reference "../styles/global.css";
   #main-content {
     @apply mx-auto w-full max-w-4xl px-4 pb-12;
   }

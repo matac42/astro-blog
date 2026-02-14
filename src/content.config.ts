@@ -1,12 +1,14 @@
-import { SITE } from "@config";
+import { SITE } from "@/config";
 import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
 
 const blog = defineCollection({
-  type: "content",
+  loader: glob({ pattern: "**/[^_]*.md", base: "./src/data/blog" }),
   schema: ({ image }) =>
     z.object({
       author: z.string().default(SITE.author),
       pubDatetime: z.date(),
+      modDatetime: z.date().optional().nullable(),
       title: z.string(),
       postSlug: z.string().optional(),
       featured: z.boolean().optional(),

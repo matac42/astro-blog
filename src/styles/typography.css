@@ -1,0 +1,67 @@
+@plugin "@tailwindcss/typography";
+
+@layer base {
+  .prose {
+    @apply prose-headings:!mb-3 prose-headings:!text-skin-text-base
+    prose-p:!text-skin-text-base
+    prose-a:!text-skin-text-base prose-a:!decoration-dashed prose-a:underline-offset-4
+    hover:prose-a:text-skin-accent prose-blockquote:!border-l-skin-accent/50
+    prose-blockquote:opacity-80
+    prose-figcaption:!text-skin-text-base prose-figcaption:opacity-70
+    prose-strong:!text-skin-text-base
+    prose-code:rounded prose-code:bg-skin-card/75
+    prose-code:p-1 prose-code:!text-skin-text-base
+    prose-code:before:!content-[''] prose-code:after:!content-['']
+    prose-pre:!text-skin-text-base prose-ol:!text-skin-text-base
+    prose-ul:overflow-x-clip prose-ul:!text-skin-text-base prose-li:marker:!text-skin-accent
+    prose-table:text-skin-text-base prose-th:border
+    prose-th:border-skin-line prose-td:border
+    prose-td:border-skin-line prose-img:mx-auto
+    prose-img:!mt-2 prose-img:border-2
+    prose-img:border-skin-line prose-hr:!border-skin-line;
+  }
+  .prose a {
+    @apply break-words hover:!text-skin-accent;
+  }
+  .prose thead th:first-child,
+  tbody td:first-child,
+  tfoot td:first-child {
+    padding-left: 0.5714286em;
+  }
+  .prose h2#table-of-contents {
+    @apply mb-2;
+  }
+  .prose details {
+    @apply inline-block cursor-pointer select-none text-skin-text-base;
+  }
+  .prose summary {
+    @apply focus-outline;
+  }
+  .prose h2#table-of-contents + p {
+    @apply hidden;
+  }
+
+  /* ===== Code Blocks & Syntax Highlighting ===== */
+  .astro-code {
+    @apply flex border bg-(--shiki-light-bg) text-(--shiki-light) outline-skin-line [&_span]:text-(--shiki-light);
+  }
+
+  html[data-theme="dark"] .astro-code {
+    @apply bg-(--shiki-dark-bg) text-(--shiki-dark) [&_span]:text-(--shiki-dark);
+  }
+
+  .astro-code {
+    .line.diff.add {
+      @apply relative inline-block w-full bg-green-400/20 before:absolute before:-left-3 before:text-green-500 before:content-['+'];
+    }
+    .line.diff.remove {
+      @apply relative inline-block w-full bg-red-500/20 before:absolute before:-left-3 before:text-red-500 before:content-['-'];
+    }
+    .line.highlighted {
+      @apply inline-block w-full bg-slate-400/20;
+    }
+    .highlighted-word {
+      @apply rounded-sm border border-skin-line px-0.5 py-px;
+    }
+  }
+}
