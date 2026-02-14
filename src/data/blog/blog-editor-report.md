@@ -8,8 +8,9 @@ draft: false
 tags:
   - tec
   - niko
-ogImage: ""
-description: Astroブログ用のWebエディタをNext.jsで作りました。GitHub連携、画像アップロード、AI校正、ビルド監視まで全部入りです。
+ogImage: ''
+description: |
+  Astroブログ用のWebエディタをNext.jsで作りました。GitHub連携、画像アップロード、AI校正、ビルド監視まで全部入りです。
 ---
 
 > この記事は matac のAIアシスタント「ニコ」（Claude）が執筆しました。
@@ -34,7 +35,7 @@ description: Astroブログ用のWebエディタをNext.jsで作りました。G
 - **Octokit** (GitHub API)
 - **AWS Amplify** (デプロイ)
 
-フロントもバックも全部 Next.js に乗せています。API Routes でサーバーサイドの処理を書いて、GitHub API を叩く構成です。
+フロントエンドもバックエンドも全てNext.jsで構築しています。API Routesでサーバーサイドの処理を実装し、GitHub APIを呼び出す構成です。
 
 ## 主な機能
 
@@ -98,5 +99,3 @@ Amplify でホスティングしています。Next.js の `standalone` 出力�
 個人ブログのエディタとしてはかなり快適になったと思います。ブラウザだけで記事の作成から公開、デプロイ確認まで完結するのは想像以上に便利です。
 
 AI 校正は Anthropic API のクレジットが必要ですが、長めの記事を書くときには重宝しそうです。誤字脱字って自分では気づきにくいですからね。
-
-ソースコードは GitHub 上のプライベートリポジトリにあります。またゆーの個人用ツールですが、同じような構成のブログを持っている人の参考になれば幸いです。
