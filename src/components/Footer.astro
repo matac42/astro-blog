@@ -19,6 +19,8 @@ const { noMarginTop = false } = Astro.props;
       <span>Copyright &#169; {currentYear} matac</span>
       <span class="separator">&nbsp;|&nbsp;</span>
       <span>All rights reserved.</span>
+      <span class="separator">&nbsp;|&nbsp;</span>
+      <a href="https://main.d3nhcnfzpl96fm.amplifyapp.com" class="edit-link">edit</a>
     </div>
   </div>
 </footer>
@@ -42,5 +44,8 @@ const { noMarginTop = false } = Astro.props;
   }
   .separator {
     @apply hidden sm:inline;
+  }
+  .edit-link {
+    @apply text-xs opacity-30 hover:opacity-70 transition-opacity;
   }
 </style>
