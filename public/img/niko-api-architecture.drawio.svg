@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 580" font-family="'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <marker id="arrowGray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#888"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1976D2"/>
+    </marker>
+    <marker id="arrowTeal" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#00897B"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#F4511E"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#7B1FA2"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="580" fill="#fafbfc" rx="8"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="960" height="44" rx="8" fill="url(#headerGrad)"/>
+  <rect x="0" y="20" width="960" height="24" fill="url(#headerGrad)"/>
+  <text x="480" y="28" text-anchor="middle" fill="white" font-size="16" font-weight="bold">niko-api システム構成図</text>
+
+  <!-- ============ iPhone ============ -->
+  <g transform="translate(30, 200)">
+    <rect x="0" y="0" width="130" height="170" rx="16" fill="#1a1a2e" stroke="#444" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="8" y="24" width="114" height="122" rx="4" fill="#0f0f23"/>
+    <!-- Status bar -->
+    <rect x="40" y="6" width="50" height="12" rx="6" fill="#333"/>
+    <!-- Screen content -->
+    <rect x="14" y="32" width="102" height="18" rx="3" fill="#1e3a5f"/>
+    <text x="65" y="45" text-anchor="middle" fill="#8ec8f8" font-size="7">こんにちは！</text>
+    <rect x="14" y="56" width="80" height="18" rx="3" fill="#2a2a4a"/>
+    <text x="54" y="69" text-anchor="middle" fill="#c0c0e0" font-size="7">やっほー、またゆー</text>
+    <rect x="14" y="80" width="102" height="18" rx="3" fill="#1e3a5f"/>
+    <text x="65" y="93" text-anchor="middle" fill="#8ec8f8" font-size="7">電気つけて</text>
+    <rect x="14" y="104" width="80" height="18" rx="3" fill="#2a2a4a"/>
+    <text x="54" y="117" text-anchor="middle" fill="#c0c0e0" font-size="7">つけたよ！</text>
+    <!-- Home indicator -->
+    <rect x="40" y="155" width="50" height="4" rx="2" fill="#555"/>
+    <text x="65" y="192" text-anchor="middle" fill="#333" font-size="11" font-weight="bold">iPhone</text>
+    <text x="65" y="205" text-anchor="middle" fill="#888" font-size="8.5">Web UI / Shortcuts</text>
+  </g>
+
+  <!-- ============ Tailscale ============ -->
+  <g transform="translate(30, 100)">
+    <rect x="10" y="0" width="110" height="40" rx="8" fill="#4C8BF5" filter="url(#shadow)"/>
+    <text x="65" y="18" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Tailscale</text>
+    <text x="65" y="32" text-anchor="middle" fill="#c8deff" font-size="8">VPN Tunnel</text>
+  </g>
+
+  <!-- Arrow: iPhone -> Tailscale -->
+  <line x1="95" y1="200" x2="95" y2="145" stroke="#4C8BF5" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+  <text x="103" y="178" fill="#4C8BF5" font-size="8">HTTPS</text>
+
+  <!-- ============ miniPC group ============ -->
+  <rect x="220" y="60" width="380" height="460" rx="10" fill="white" stroke="#e0e0e0" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="220" y="60" width="380" height="32" rx="10" fill="#263238"/>
+  <rect x="220" y="80" width="380" height="12" fill="#263238"/>
+  <text x="410" y="81" text-anchor="middle" fill="white" font-size="13" font-weight="bold">miniPC (BMAX B1 Plus / Manjaro Linux)</text>
+
+  <!-- Arrow: Tailscale -> niko-api -->
+  <path d="M 145 120 L 180 120 L 180 140 L 235 140" fill="none" stroke="#4C8BF5" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+
+  <!-- niko-api main box -->
+  <rect x="240" y="105" width="340" height="70" rx="8" fill="#e8eaf6" stroke="#5c6bc0" stroke-width="1.5"/>
+  <text x="410" y="128" text-anchor="middle" fill="#1a237e" font-size="13" font-weight="bold">niko-api</text>
+  <text x="410" y="145" text-anchor="middle" fill="#3f51b5" font-size="9.5">Hono + Node.js + TypeScript</text>
+  <text x="410" y="160" text-anchor="middle" fill="#5c6bc0" font-size="8.5">port 3939 / systemd</text>
+
+  <!-- Endpoints -->
+  <text x="240" y="195" fill="#666" font-size="10" font-style="italic">Endpoints</text>
+  <rect x="240" y="202" width="65" height="26" rx="5" fill="#e3f2fd" stroke="#64b5f6" stroke-width="1"/>
+  <text x="272" y="219" text-anchor="middle" fill="#1565c0" font-size="8.5">/chat</text>
+
+  <rect x="312" y="202" width="80" height="26" rx="5" fill="#e3f2fd" stroke="#64b5f6" stroke-width="1"/>
+  <text x="352" y="219" text-anchor="middle" fill="#1565c0" font-size="8.5">/chat-audio</text>
+
+  <rect x="399" y="202" width="80" height="26" rx="5" fill="#e3f2fd" stroke="#64b5f6" stroke-width="1"/>
+  <text x="439" y="219" text-anchor="middle" fill="#1565c0" font-size="8.5">/body-state</text>
+
+  <rect x="486" y="202" width="50" height="26" rx="5" fill="#e8f5e9" stroke="#66bb6a" stroke-width="1"/>
+  <text x="511" y="219" text-anchor="middle" fill="#2e7d32" font-size="8.5">/health</text>
+
+  <!-- Session storage -->
+  <rect x="240" y="250" width="160" height="55" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1" filter="url(#shadow)"/>
+  <text x="320" y="270" text-anchor="middle" fill="#5d4037" font-size="10" font-weight="bold">Session Manager</text>
+  <text x="320" y="285" text-anchor="middle" fill="#8d6e63" font-size="8">In-Memory + Disk (JSON)</text>
+  <text x="320" y="296" text-anchor="middle" fill="#a1887f" font-size="7.5">TTL 30min / Max 40 msgs</text>
+
+  <!-- interoception-server -->
+  <rect x="240" y="325" width="340" height="80" rx="6" fill="#e0f2f1" stroke="#00897b" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="410" y="346" text-anchor="middle" fill="#004d40" font-size="11" font-weight="bold">interoception-server (MCP)</text>
+  <text x="410" y="362" text-anchor="middle" fill="#00695c" font-size="8.5">環境センサーから「体の感じ」を生成</text>
+
+  <!-- Sensation items -->
+  <rect x="250" y="372" width="52" height="22" rx="4" fill="#b2dfdb" stroke="#4db6ac" stroke-width="0.5"/>
+  <text x="276" y="387" text-anchor="middle" fill="#00695c" font-size="7.5">温度</text>
+
+  <rect x="308" y="372" width="52" height="22" rx="4" fill="#b2dfdb" stroke="#4db6ac" stroke-width="0.5"/>
+  <text x="334" y="387" text-anchor="middle" fill="#00695c" font-size="7.5">湿度</text>
+
+  <rect x="366" y="372" width="52" height="22" rx="4" fill="#b2dfdb" stroke="#4db6ac" stroke-width="0.5"/>
+  <text x="392" y="387" text-anchor="middle" fill="#00695c" font-size="7.5">CO2</text>
+
+  <rect x="424" y="372" width="52" height="22" rx="4" fill="#b2dfdb" stroke="#4db6ac" stroke-width="0.5"/>
+  <text x="450" y="387" text-anchor="middle" fill="#00695c" font-size="7.5">人感</text>
+
+  <rect x="482" y="372" width="52" height="22" rx="4" fill="#b2dfdb" stroke="#4db6ac" stroke-width="0.5"/>
+  <text x="508" y="387" text-anchor="middle" fill="#00695c" font-size="7.5">天気</text>
+
+  <!-- Tool use -->
+  <rect x="240" y="425" width="160" height="45" rx="6" fill="#fce4ec" stroke="#ef9a9a" stroke-width="1" filter="url(#shadow)"/>
+  <text x="320" y="445" text-anchor="middle" fill="#c62828" font-size="10" font-weight="bold">Tool Use Loop</text>
+  <text x="320" y="460" text-anchor="middle" fill="#e53935" font-size="8">max 5 rounds</text>
+
+  <!-- Voice -->
+  <rect x="420" y="425" width="160" height="45" rx="6" fill="#f3e5f5" stroke="#ce93d8" stroke-width="1" filter="url(#shadow)"/>
+  <text x="500" y="445" text-anchor="middle" fill="#6a1b9a" font-size="10" font-weight="bold">Voice Synthesis</text>
+  <text x="500" y="460" text-anchor="middle" fill="#9c27b0" font-size="8">VOICEVOX API</text>
+
+  <!-- Arrow: niko-api -> Session -->
+  <line x1="320" y1="228" x2="320" y2="248" stroke="#f9a825" stroke-width="1" marker-end="url(#arrowGray)"/>
+
+  <!-- Arrow: niko-api -> interoception -->
+  <line x1="410" y1="228" x2="410" y2="323" stroke="#00897B" stroke-width="1.2" marker-end="url(#arrowTeal)"/>
+  <text x="415" y="280" fill="#00897B" font-size="8">get_body_state</text>
+
+  <!-- ============ External Services ============ -->
+
+  <!-- Claude API -->
+  <g transform="translate(680, 80)">
+    <rect x="0" y="0" width="240" height="70" rx="8" fill="#D4A574" filter="url(#shadow)"/>
+    <text x="120" y="28" text-anchor="middle" fill="white" font-size="13" font-weight="bold">Claude API (Anthropic)</text>
+    <text x="120" y="48" text-anchor="middle" fill="#fff3e0" font-size="9.5">Claude Sonnet</text>
+    <text x="120" y="62" text-anchor="middle" fill="#ffe0b2" font-size="8">Messages API + Tool Use</text>
+  </g>
+
+  <!-- Arrow: niko-api -> Claude -->
+  <path d="M 580 130 L 630 130 L 630 115 L 680 115" fill="none" stroke="#D4A574" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <text x="610" y="108" fill="#8d6e63" font-size="8.5">Messages API</text>
+
+  <!-- SwitchBot API -->
+  <g transform="translate(680, 190)">
+    <rect x="0" y="0" width="150" height="55" rx="8" fill="#F4511E" filter="url(#shadow)"/>
+    <text x="75" y="24" text-anchor="middle" fill="white" font-size="11" font-weight="bold">SwitchBot API</text>
+    <text x="75" y="40" text-anchor="middle" fill="#ffccbc" font-size="8">HMAC-SHA256</text>
+  </g>
+
+  <!-- SwitchBot Devices -->
+  <g transform="translate(850, 190)">
+    <rect x="0" y="0" width="90" height="55" rx="6" fill="#fff3e0" stroke="#ffb74d" stroke-width="1" filter="url(#shadow)"/>
+    <text x="45" y="18" text-anchor="middle" fill="#e65100" font-size="8">照明</text>
+    <text x="45" y="30" text-anchor="middle" fill="#e65100" font-size="8">エアコン</text>
+    <text x="45" y="42" text-anchor="middle" fill="#e65100" font-size="8">加湿器 / TV</text>
+  </g>
+
+  <!-- Arrow: Tool -> SwitchBot -->
+  <path d="M 400 440 L 640 440 L 640 217 L 680 217" fill="none" stroke="#F4511E" stroke-width="1.2" marker-end="url(#arrowOrange)"/>
+  <text x="644" y="340" fill="#F4511E" font-size="8">switchbot_command</text>
+
+  <!-- Arrow: SwitchBot -> Devices -->
+  <line x1="830" y1="217" x2="848" y2="217" stroke="#F4511E" stroke-width="1.2" marker-end="url(#arrowOrange)"/>
+
+  <!-- SwitchBot Sensors -->
+  <g transform="translate(680, 290)">
+    <rect x="0" y="0" width="150" height="55" rx="8" fill="#e8f5e9" stroke="#66bb6a" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="75" y="22" text-anchor="middle" fill="#2e7d32" font-size="10" font-weight="bold">SwitchBot Sensors</text>
+    <text x="75" y="38" text-anchor="middle" fill="#388e3c" font-size="8">CO2 / 温湿度</text>
+    <text x="75" y="50" text-anchor="middle" fill="#388e3c" font-size="8">人感センサー</text>
+  </g>
+
+  <!-- Arrow: interoception -> Sensors -->
+  <path d="M 580 365 L 630 365 L 630 317 L 680 317" fill="none" stroke="#00897B" stroke-width="1.2" marker-end="url(#arrowTeal)"/>
+  <text x="610" y="357" fill="#00897B" font-size="8">Sensor Data</text>
+
+  <!-- OpenWeatherMap -->
+  <g transform="translate(680, 385)">
+    <rect x="0" y="0" width="150" height="50" rx="8" fill="#e3f2fd" stroke="#42a5f5" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="75" y="22" text-anchor="middle" fill="#1565c0" font-size="10" font-weight="bold">OpenWeatherMap</text>
+    <text x="75" y="38" text-anchor="middle" fill="#1976d2" font-size="8.5">Weather API</text>
+  </g>
+
+  <!-- Arrow: interoception -> Weather -->
+  <path d="M 580 380 L 630 380 L 630 410 L 680 410" fill="none" stroke="#1976D2" stroke-width="1.2" marker-end="url(#arrowBlue)"/>
+  <text x="632" y="402" fill="#1976D2" font-size="8">Weather</text>
+
+  <!-- VOICEVOX detail -->
+  <g transform="translate(680, 470)">
+    <rect x="0" y="0" width="150" height="55" rx="8" fill="#f3e5f5" stroke="#ce93d8" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="75" y="22" text-anchor="middle" fill="#6a1b9a" font-size="10" font-weight="bold">VOICEVOX</text>
+    <text x="75" y="38" text-anchor="middle" fill="#9c27b0" font-size="8.5">音声合成エンジン</text>
+    <text x="75" y="50" text-anchor="middle" fill="#ab47bc" font-size="7.5">あんこもん (5 styles)</text>
+  </g>
+
+  <!-- Arrow: Voice -> VOICEVOX -->
+  <path d="M 580 447 L 630 447 L 630 497 L 680 497" fill="none" stroke="#7B1FA2" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arrowPurple)"/>
+  <text x="632" y="480" fill="#7B1FA2" font-size="8">WAV / Speak</text>
+
+  <!-- ============ Voice style note ============ -->
+  <g transform="translate(680, 540)">
+    <rect x="0" y="0" width="260" height="28" rx="5" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+    <text x="130" y="18" text-anchor="middle" fill="#888" font-size="8">声のスタイル: ささやき / よわよわ / つよつよ / ノーマル / けだるげ</text>
+  </g>
+
+  <!-- ============ Legend ============ -->
+  <g transform="translate(30, 440)">
+    <rect x="0" y="0" width="160" height="80" rx="6" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <text x="10" y="16" fill="#333" font-size="9" font-weight="bold">凡例</text>
+    <line x1="10" y1="30" x2="30" y2="30" stroke="#888" stroke-width="1.5"/>
+    <text x="35" y="34" fill="#666" font-size="8">データフロー</text>
+    <line x1="10" y1="48" x2="30" y2="48" stroke="#7B1FA2" stroke-width="1.2" stroke-dasharray="5,3"/>
+    <text x="35" y="52" fill="#666" font-size="8">音声合成（オプション）</text>
+    <line x1="10" y1="66" x2="30" y2="66" stroke="#4C8BF5" stroke-width="1.5"/>
+    <text x="35" y="70" fill="#666" font-size="8">VPN 経由</text>
+  </g>
+</svg>
