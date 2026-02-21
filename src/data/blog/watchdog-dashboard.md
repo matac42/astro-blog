@@ -120,13 +120,126 @@ servicestatus {
 
 ダッシュボードで「見える」ようになったら、次は「通知する」部分です。
 
-### 状態遷移
+### 状態遷移と自動復旧
 
 ```
-OK → SOFT_FAIL (1〜N回) → HARD_FAIL → Recovery試行 → AI分析 → Email
+OK → SOFT_FAIL (1〜N回) → HARD_FAIL → Recovery試行 → 診断収集 → AI分析 → Email
 ```
 
-SOFT_FAIL で一時的な障害を吸収し、連続失敗が閾値を超えたら HARD_FAIL に遷移。自動復旧コマンドを実行し、結果に関わらず Claude Haiku で診断分析してメール送信します。
+SOFT_FAIL で一時的な障害を吸収し、連続失敗が閾値を超えたら HARD_FAIL に遷移。ここからがニコの一次対応です。
+
+### HARD_FAIL 時の自動復旧フロー
+
+HARD_FAIL に入ると、以下の処理が自動で走ります。
+
+**1. 自動復旧コマンドの実行**
+
+config.json でサービスごとに `recovery_cmd` を定義しています。
+
+```json
+{
+  "name": "niko-app",
+  "type": "http",
+  "url": "http://minipc:3939/health",
+  "recovery_cmd": "sudo systemctl restart niko-app"
+}
+```
+
+SSH 経由で miniPC 上の復旧コマンドを実行し、15秒待ってから再チェックで復旧を確認します。
+
+```python
+def attempt_recovery(config, svc, svc_state):
+    recovery_cmd = svc.get("recovery_cmd")
+    if not recovery_cmd:
+        return False, "No recovery command configured"
+
+    code, output = ssh_cmd(config, recovery_cmd, timeout=30)
+    if code != 0:
+        return False, f"Recovery command failed (exit={code}): {output}"
+
+    time.sleep(15)  # サービス安定化を待つ
+
+    # 復旧確認
+    check_fn = CHECK_FUNCS.get(svc["type"])
+    ok, msg = check_fn(svc, config)
+    if ok:
+        return True, f"Recovery succeeded - verified: {msg}"
+    return False, f"Recovery command succeeded but service still unhealthy: {msg}"
+```
+
+niko-app なら `systemctl restart`、Nagios なら `docker restart`、Alpine VM なら VM の再起動。SSH や CPU のようにリカバリ手段がないサービスは `recovery_cmd: null` にして、診断・通知だけ行います。
+
+**2. 診断情報の収集**
+
+復旧の成否に関わらず、miniPC から8種類の診断情報をSSHで収集します。
+
+- `uptime` — 稼働時間とロードアベレージ
+- `free -m` — メモリ使用状況
+- `df -h /` — ディスク使用率
+- `ps aux --sort=-%cpu | head -5` — CPU消費トップ5
+- `ps aux --sort=-%mem | head -5` — メモリ消費トップ5
+- `systemctl --failed` — 障害中のsystemdユニット
+- `docker ps` — コンテナの状態
+- `systemctl is-active niko-app` — niko-appの状態
+
+**3. Claude Haiku による AI 分析**
+
+収集した診断情報をまるごと Claude Haiku に投げて、一次対応レポートを生成します。
+
+```python
+def analyze_with_claude(config, service_name, service_msg, diagnostics):
+    prompt = f"""あなたはminiPC監視システムと連携するAIアシスタント「ニコ」です。
+以下のアラート情報と診断結果を分析し、一次対応レポートを作成してください。
+
+## アラート情報
+- サービス: {service_name}
+- 状態: {service_msg}
+
+## miniPC 診断結果
+{diagnostics}
+
+## レポート要件
+### 状況サマリ
+### 診断結果の分析
+### 推定原因
+### 緊急度"""
+```
+
+Claude が生のコマンド出力を読んで、「何が起きているか」「原因は何か」「どのくらい急ぐべきか」を判断します。人間がSSHでログインして手作業で確認する部分を、AIが代行するイメージです。
+
+**4. 統合メールの送信**
+
+復旧結果と AI 分析を1通のメールにまとめて送信します。
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Niko Watchdog - AI一次対応レポート
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+サービス: niko-app
+状態:     HTTP connection refused
+時刻:     2026-02-21 13:04:04 JST
+
+━━━ 自動復旧対応 ━━━
+結果: 復旧成功
+詳細: Recovery succeeded - verified: HTTP 200
+
+━━━ AI分析レポート ━━━
+### 状況サマリ
+niko-appが応答停止。自動restart後に復旧を確認。
+
+### 診断結果の分析
+メモリ使用率37%、CPU負荷は低い。docker ps正常。
+systemd上でniko-appのrestartが記録されている。
+
+### 推定原因
+Node.jsプロセスの一時的なハングまたはOOM。
+
+### 緊急度
+低（自動復旧済み。再発時は要調査）
+```
+
+1インシデント1通。復旧成功した場合でもメールは送るので、「何が起きて、どう対処されたか」が記録として残ります。30分経っても HARD_FAIL が続いている場合は再通知します。
 
 ### アラートチューニング — サービス影響ベース
 
