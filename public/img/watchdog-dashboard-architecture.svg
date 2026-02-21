@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" font-family="'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a237e"/>
+      <stop offset="100%" stop-color="#0d47a1"/>
+    </linearGradient>
+    <marker id="arrowGray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#888"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#4C8BF5"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#2e7d32"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#c62828"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#e65100"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#6a1b9a"/>
+    </marker>
+    <marker id="arrowBidir" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#ff6f00"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="640" fill="#fafbfc" rx="8"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="960" height="44" rx="8" fill="url(#headerGrad)"/>
+  <rect x="0" y="20" width="960" height="24" fill="url(#headerGrad)"/>
+  <text x="480" y="28" text-anchor="middle" fill="white" font-size="16" font-weight="bold">2拠点相互監視 + 統合ダッシュボード 構成図</text>
+
+  <!-- ============ Browser ============ -->
+  <g transform="translate(30, 80)">
+    <rect x="0" y="0" width="130" height="80" rx="10" fill="#1a1a2e" stroke="#444" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="8" y="12" width="114" height="48" rx="4" fill="#0a0e1a"/>
+    <!-- Dashboard mockup -->
+    <rect x="14" y="18" width="46" height="8" rx="2" fill="#1a3a2a"/>
+    <circle cx="18" cy="22" r="2" fill="#4ade80"/>
+    <text x="24" y="24" fill="#4ade80" font-size="4">7/7 OK</text>
+    <rect x="14" y="30" width="46" height="8" rx="2" fill="#1a3a2a"/>
+    <circle cx="18" cy="34" r="2" fill="#4ade80"/>
+    <text x="24" y="36" fill="#4ade80" font-size="4">16/16 OK</text>
+    <rect x="66" y="18" width="50" height="20" rx="2" fill="#141926"/>
+    <text x="91" y="30" text-anchor="middle" fill="#8ab4f8" font-size="4.5">Nagios</text>
+    <!-- Home indicator -->
+    <rect x="40" y="66" width="50" height="3" rx="1.5" fill="#555"/>
+    <text x="65" y="100" text-anchor="middle" fill="#333" font-size="11" font-weight="bold">Browser</text>
+    <text x="65" y="113" text-anchor="middle" fill="#888" font-size="8">iPhone / Mac</text>
+  </g>
+
+  <!-- ============ Tailscale VPN ============ -->
+  <g transform="translate(190, 95)">
+    <rect x="0" y="0" width="90" height="36" rx="8" fill="#4C8BF5" filter="url(#shadow)"/>
+    <text x="45" y="16" text-anchor="middle" fill="white" font-size="9" font-weight="bold">Tailscale</text>
+    <text x="45" y="28" text-anchor="middle" fill="#c8deff" font-size="7">VPN</text>
+  </g>
+
+  <!-- Arrow: Browser -> Tailscale -->
+  <line x1="160" y1="113" x2="188" y2="113" stroke="#4C8BF5" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+
+  <!-- ============ sentinel (Oracle Cloud) ============ -->
+  <rect x="310" y="60" width="340" height="300" rx="10" fill="white" stroke="#e0e0e0" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="310" y="60" width="340" height="32" rx="10" fill="#1565c0"/>
+  <rect x="310" y="80" width="340" height="12" fill="#1565c0"/>
+  <text x="480" y="81" text-anchor="middle" fill="white" font-size="12" font-weight="bold">sentinel (Oracle Cloud VM)</text>
+  <text x="480" y="102" text-anchor="middle" fill="#666" font-size="8">Ubuntu 22.04 / Always Free</text>
+
+  <!-- niko-watchdog -->
+  <rect x="325" y="115" width="310" height="55" rx="8" fill="#e8eaf6" stroke="#5c6bc0" stroke-width="1.5"/>
+  <text x="480" y="135" text-anchor="middle" fill="#1a237e" font-size="12" font-weight="bold">niko-watchdog.py</text>
+  <text x="480" y="150" text-anchor="middle" fill="#3f51b5" font-size="8.5">Python3 / 3 threads / systemd</text>
+  <text x="480" y="162" text-anchor="middle" fill="#5c6bc0" font-size="8">:8080</text>
+
+  <!-- Endpoints -->
+  <rect x="325" y="180" width="72" height="24" rx="5" fill="#e3f2fd" stroke="#64b5f6" stroke-width="1"/>
+  <text x="361" y="196" text-anchor="middle" fill="#1565c0" font-size="8">/dashboard</text>
+
+  <rect x="403" y="180" width="58" height="24" rx="5" fill="#e3f2fd" stroke="#64b5f6" stroke-width="1"/>
+  <text x="432" y="196" text-anchor="middle" fill="#1565c0" font-size="8">/status</text>
+
+  <rect x="467" y="180" width="80" height="24" rx="5" fill="#e3f2fd" stroke="#64b5f6" stroke-width="1"/>
+  <text x="507" y="196" text-anchor="middle" fill="#1565c0" font-size="8">/nagios/status</text>
+
+  <rect x="553" y="180" width="50" height="24" rx="5" fill="#e8f5e9" stroke="#66bb6a" stroke-width="1"/>
+  <text x="578" y="196" text-anchor="middle" fill="#2e7d32" font-size="8">/health</text>
+
+  <!-- Arrow: Tailscale -> sentinel -->
+  <line x1="282" y1="113" x2="323" y2="113" stroke="#4C8BF5" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+  <text x="290" y="106" fill="#4C8BF5" font-size="7">HTTP</text>
+
+  <!-- Monitor loop -->
+  <rect x="325" y="215" width="150" height="45" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1" filter="url(#shadow)"/>
+  <text x="400" y="233" text-anchor="middle" fill="#5d4037" font-size="9" font-weight="bold">Monitor Loop</text>
+  <text x="400" y="248" text-anchor="middle" fill="#8d6e63" font-size="7.5">60s interval / 7 services</text>
+
+  <!-- Alert pipeline -->
+  <rect x="325" y="270" width="310" height="75" rx="6" fill="#fce4ec" stroke="#ef9a9a" stroke-width="1" filter="url(#shadow)"/>
+  <text x="480" y="288" text-anchor="middle" fill="#c62828" font-size="9" font-weight="bold">Alert Pipeline</text>
+
+  <!-- Pipeline steps -->
+  <rect x="333" y="296" width="55" height="20" rx="4" fill="#ffcdd2"/>
+  <text x="360" y="310" text-anchor="middle" fill="#b71c1c" font-size="6.5">SOFT_FAIL</text>
+
+  <text x="394" y="310" fill="#c62828" font-size="10">&#8594;</text>
+
+  <rect x="404" y="296" width="56" height="20" rx="4" fill="#ef9a9a"/>
+  <text x="432" y="310" text-anchor="middle" fill="#b71c1c" font-size="6.5">HARD_FAIL</text>
+
+  <text x="466" y="310" fill="#c62828" font-size="10">&#8594;</text>
+
+  <rect x="476" y="296" width="48" height="20" rx="4" fill="#e57373"/>
+  <text x="500" y="310" text-anchor="middle" fill="white" font-size="6.5">Recovery</text>
+
+  <text x="530" y="310" fill="#c62828" font-size="10">&#8594;</text>
+
+  <rect x="540" y="296" width="42" height="20" rx="4" fill="#d32f2f"/>
+  <text x="561" y="310" text-anchor="middle" fill="white" font-size="6.5">Email</text>
+
+  <rect x="588" y="296" width="38" height="20" rx="4" fill="#b71c1c"/>
+  <text x="607" y="310" text-anchor="middle" fill="white" font-size="5.5">AI&#x5206;&#x6790;</text>
+
+  <!-- Nagios fetch -->
+  <rect x="485" y="215" width="150" height="45" rx="6" fill="#e0f2f1" stroke="#00897b" stroke-width="1" filter="url(#shadow)"/>
+  <text x="560" y="233" text-anchor="middle" fill="#004d40" font-size="9" font-weight="bold">Nagios Fetch</text>
+  <text x="560" y="248" text-anchor="middle" fill="#00695c" font-size="7.5">90s interval / SSH</text>
+
+  <!-- ============ miniPC ============ -->
+  <rect x="310" y="400" width="340" height="220" rx="10" fill="white" stroke="#e0e0e0" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="310" y="400" width="340" height="32" rx="10" fill="#263238"/>
+  <rect x="310" y="420" width="340" height="12" fill="#263238"/>
+  <text x="480" y="421" text-anchor="middle" fill="white" font-size="12" font-weight="bold">miniPC (BMAX B1 Plus / Manjaro)</text>
+  <text x="480" y="442" text-anchor="middle" fill="#666" font-size="8">Celeron N3350 / 6GB / Tailscale</text>
+
+  <!-- niko-app -->
+  <rect x="325" y="455" width="145" height="40" rx="6" fill="#e8eaf6" stroke="#5c6bc0" stroke-width="1" filter="url(#shadow)"/>
+  <text x="397" y="473" text-anchor="middle" fill="#1a237e" font-size="9" font-weight="bold">niko-app</text>
+  <text x="397" y="486" text-anchor="middle" fill="#5c6bc0" font-size="7">Hono :3939</text>
+
+  <!-- Nagios Docker -->
+  <rect x="490" y="455" width="145" height="40" rx="6" fill="#e0f2f1" stroke="#00897b" stroke-width="1" filter="url(#shadow)"/>
+  <text x="562" y="473" text-anchor="middle" fill="#004d40" font-size="9" font-weight="bold">Nagios (Docker)</text>
+  <text x="562" y="486" text-anchor="middle" fill="#00695c" font-size="7">status.dat :80</text>
+
+  <!-- Alpine VM -->
+  <rect x="325" y="505" width="145" height="40" rx="6" fill="#f3e5f5" stroke="#ce93d8" stroke-width="1" filter="url(#shadow)"/>
+  <text x="397" y="523" text-anchor="middle" fill="#6a1b9a" font-size="9" font-weight="bold">Alpine VM (QEMU)</text>
+  <text x="397" y="536" text-anchor="middle" fill="#9c27b0" font-size="7">NRPE :5666 / HTTP :8081</text>
+
+  <!-- systemd services -->
+  <rect x="490" y="505" width="145" height="40" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1" filter="url(#shadow)"/>
+  <text x="562" y="523" text-anchor="middle" fill="#5d4037" font-size="9" font-weight="bold">System Metrics</text>
+  <text x="562" y="536" text-anchor="middle" fill="#8d6e63" font-size="7">CPU / Memory / Disk</text>
+
+  <!-- SSH Service -->
+  <rect x="325" y="555" width="310" height="28" rx="6" fill="#e3f2fd" stroke="#64b5f6" stroke-width="1"/>
+  <text x="480" y="574" text-anchor="middle" fill="#1565c0" font-size="8.5">SSH (port 22) + Tailscale VPN</text>
+
+  <!-- Arrow: sentinel -> miniPC (SSH) -->
+  <path d="M 480 360 L 480 398" fill="none" stroke="#263238" stroke-width="2" marker-end="url(#arrowGray)"/>
+  <text x="488" y="385" fill="#263238" font-size="8" font-weight="bold">SSH</text>
+
+  <!-- Arrow: Nagios fetch -> status.dat -->
+  <path d="M 560 260 L 560 380 L 562 398" fill="none" stroke="#00897b" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arrowGreen)"/>
+  <text x="568" y="380" fill="#00897b" font-size="7">docker exec cat status.dat</text>
+
+  <!-- Arrow: Monitor -> miniPC services -->
+  <path d="M 400 260 L 400 380 L 397 398" fill="none" stroke="#f9a825" stroke-width="1.2" marker-end="url(#arrowGray)"/>
+  <text x="340" y="380" fill="#f9a825" font-size="7">HTTP / SSH checks</text>
+
+  <!-- ============ External Services ============ -->
+
+  <!-- Claude Haiku -->
+  <g transform="translate(700, 270)">
+    <rect x="0" y="0" width="210" height="50" rx="8" fill="#D4A574" filter="url(#shadow)"/>
+    <text x="105" y="22" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Claude API (Haiku)</text>
+    <text x="105" y="38" text-anchor="middle" fill="#fff3e0" font-size="8">AI incident analysis</text>
+  </g>
+
+  <!-- Arrow: sentinel -> Claude -->
+  <line x1="650" y1="295" x2="698" y2="295" stroke="#D4A574" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <!-- Gmail -->
+  <g transform="translate(700, 340)">
+    <rect x="0" y="0" width="210" height="50" rx="8" fill="#c62828" filter="url(#shadow)"/>
+    <text x="105" y="22" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Gmail (msmtp)</text>
+    <text x="105" y="38" text-anchor="middle" fill="#ffcdd2" font-size="8">Alert email + AI report</text>
+  </g>
+
+  <!-- Arrow: sentinel -> Gmail -->
+  <line x1="650" y1="340" x2="698" y2="355" stroke="#c62828" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+
+  <!-- ============ Mutual monitoring arrow ============ -->
+  <g transform="translate(700, 80)">
+    <rect x="0" y="0" width="210" height="70" rx="8" fill="#fff8e1" stroke="#ff6f00" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="105" y="20" text-anchor="middle" fill="#e65100" font-size="10" font-weight="bold">2拠点相互監視</text>
+    <text x="105" y="38" text-anchor="middle" fill="#bf360c" font-size="8">sentinel &#8594; miniPC: watchdog (7svc)</text>
+    <text x="105" y="52" text-anchor="middle" fill="#bf360c" font-size="8">miniPC &#8594; sentinel: Nagios (5svc)</text>
+    <text x="105" y="64" text-anchor="middle" fill="#e65100" font-size="7">&#8593; /health endpoint</text>
+  </g>
+
+  <!-- ============ Threshold tuning note ============ -->
+  <g transform="translate(700, 170)">
+    <rect x="0" y="0" width="210" height="75" rx="6" fill="#f5f5f5" stroke="#bdbdbd" stroke-width="1"/>
+    <text x="105" y="16" text-anchor="middle" fill="#333" font-size="9" font-weight="bold">Alert Tuning</text>
+    <line x1="10" y1="24" x2="200" y2="24" stroke="#e0e0e0"/>
+    <text x="15" y="40" fill="#2e7d32" font-size="7.5">Service (HTTP/SSH): max_soft=1 (2min)</text>
+    <text x="15" y="54" fill="#e65100" font-size="7.5">Resource (CPU/Mem/Disk): max_soft=4 (5min)</text>
+    <text x="15" y="68" fill="#666" font-size="7.5">CPU: warn=400% crit=600% (load 8/12)</text>
+  </g>
+
+  <!-- ============ Dashboard note ============ -->
+  <g transform="translate(30, 220)">
+    <rect x="0" y="0" width="250" height="80" rx="6" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <text x="125" y="18" text-anchor="middle" fill="#333" font-size="9" font-weight="bold">Dashboard (dashboard.html)</text>
+    <line x1="10" y1="26" x2="240" y2="26" stroke="#e0e0e0"/>
+    <text x="15" y="42" fill="#666" font-size="7.5">&#x2022; Watchdog card: sentinel&#8594;miniPC 7svc</text>
+    <text x="15" y="56" fill="#666" font-size="7.5">&#x2022; Nagios cards: per-host service status</text>
+    <text x="15" y="70" fill="#666" font-size="7.5">&#x2022; 30s auto-refresh / dark theme</text>
+  </g>
+
+  <!-- ============ Legend ============ -->
+  <g transform="translate(30, 320)">
+    <rect x="0" y="0" width="250" height="75" rx="6" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <text x="10" y="16" fill="#333" font-size="9" font-weight="bold">凡例</text>
+    <line x1="10" y1="30" x2="30" y2="30" stroke="#263238" stroke-width="2"/>
+    <text x="35" y="34" fill="#666" font-size="8">SSH (monitoring &amp; recovery)</text>
+    <line x1="10" y1="48" x2="30" y2="48" stroke="#00897b" stroke-width="1.2" stroke-dasharray="5,3"/>
+    <text x="35" y="52" fill="#666" font-size="8">Nagios status.dat fetch (90s)</text>
+    <line x1="10" y1="66" x2="30" y2="66" stroke="#4C8BF5" stroke-width="1.5"/>
+    <text x="35" y="70" fill="#666" font-size="8">Tailscale VPN</text>
+  </g>
+</svg>
