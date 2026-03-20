@@ -196,10 +196,16 @@ const { activeNav } = Astro.props;
 
 <script>
   function toggleNav() {
-    // Toggle menu
     const menuBtn = document.querySelector(".hamburger-menu");
     const menuIcon = document.querySelector(".menu-icon");
     const menuItems = document.querySelector("#menu-items");
+
+    // Reset menu to closed state
+    menuIcon?.classList.remove("is-active");
+    menuBtn?.setAttribute("aria-expanded", "false");
+    menuBtn?.setAttribute("aria-label", "Open Menu");
+    menuItems?.classList.add("display-none");
+    menuItems?.classList.remove("flex");
 
     menuBtn?.addEventListener("click", () => {
       const menuExpanded = menuBtn.getAttribute("aria-expanded") === "true";
